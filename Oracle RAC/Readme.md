@@ -1,1 +1,1 @@
-# Oracle
+# Oracle RAC(Real Application Cluster)
