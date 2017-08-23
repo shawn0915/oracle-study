@@ -1,4 +1,4 @@
-# oracle xe
+# Oracle XE
 
 http://www.oracle.com/technetwork/database/database-technologies/express-edition/overview/index.html
 
