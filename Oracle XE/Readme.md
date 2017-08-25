@@ -1,10 +1,9 @@
 # Oracle XE
 
-http://www.oracle.com/technetwork/database/database-technologies/express-edition/overview/index.html
+## Downloads
 
-http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
+- [Oracle Database Express Edition 11g Release 2](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
 
-http://download.oracle.com/otn/linux/oracle11g/xe/oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 
 # ref
 
