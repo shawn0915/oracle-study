@@ -11,3 +11,5 @@ ORDER BY comp_name;
 
 select * from v$option;
 
+
+

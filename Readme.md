@@ -7,6 +7,8 @@
 - [Backup](Backup/Readme.md)
 - [Monitor](Monitor/Readme.md)
 - [Upgrade](Upgrade/Readme.md)
+- [Optimize](Optimize/Readme.md)
+- [Mgmt](Mgmt/Readme.md)
 
 > Enhance
 
@@ -19,3 +21,8 @@
 ## Ref
 
 - [OTN](http://www.oracle.com/technetwork/cn/index.html)
+- [Oracle connection strings](https://www.connectionstrings.com/oracle/)
+
+## Book List
+
+- 《Oracle DBA 工作笔记》 杨建荣

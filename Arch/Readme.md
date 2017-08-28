@@ -14,9 +14,6 @@
 
 # 监听器
 
-```
-listener.ora
-tnsnames.ora
-
-Sqlnet.ora -- net trace
-```
+- [listener.ora](../sql_demo/config/listener.ora)
+- [tnsnames.ora](../sql_demo/config/tnsnames.ora)
+- Sqlnet.ora -- net trace
