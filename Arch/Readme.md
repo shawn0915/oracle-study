@@ -1,3 +1,15 @@
+# 结构
+
+- 模式
+- 表空间
+- 数据库文件
+  - 控制文件
+  - 数据文件
+  - redo日志文件
+- 可插拔数据库(PDB)(12c)
+
+、日志档案、块变化跟踪文件、Flashback日志、恢复备份(RMAN)文件
+
 # Oracle DBMS
 
 - 进程监视器 Process Monitor, PMON
