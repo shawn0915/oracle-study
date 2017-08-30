@@ -1,5 +1,24 @@
-# INDEX and CONSTRAINTS
+# INDEX 
+
+> 索引结构
+
+- B*Tree
+- 反向键索引
+- 位图索引
+- 基于函数的索引 8i
+- 不可见索引,invisible index
+  - 11g新特性
+  - 让优化器在一段时间内忽略索引
+
+>
 
 - unique index
 - nosegment index 虚拟索引
-- invisible index 不可见索引
+
+# CONSTRAINTS
+
+- NOT NULL
+- 唯一性
+- 主键
+- 外键
+- 校验
