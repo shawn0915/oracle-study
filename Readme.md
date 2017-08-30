@@ -3,19 +3,22 @@
 > Base
 
 - [Arch](Arch/Readme.md)
-- [DEV](Dev/Readme.md)
 - [Backup](Backup/Readme.md)
-- [Monitor](Monitor/Readme.md)
-- [Upgrade](Upgrade/Readme.md)
-- [Optimize](Optimize/Readme.md)
+- [Concepts](Concepts/Readme.md)
+- [DEV](Dev/Readme.md)
 - [Mgmt](Mgmt/Readme.md)
+- [Monitor](Monitor/Readme.md)
+- [Optimize](Optimize/Readme.md)
+- [Utilities](Utilities/Readme.md)
 
 > Enhance
 
-- [Oracle XE](Oracle XE/Readme.md)
-- [Oracle RAC](Oracle RAC/Readme.md)
-- [GoldenGate](GoldenGate/Readme.md)
 - [Oracle ASM](Oracle ASM/Readme.md)
+- [Oracle GoldenGate](Oracle GoldenGate/Readme.md)
+- [Oracle RAC](Oracle RAC/Readme.md)
+- [Oracle XE](Oracle XE/Readme.md)
+
+
 
 
 > 版本 version
@@ -39,6 +42,7 @@
 
 - [OTN](http://www.oracle.com/technetwork/cn/index.html)
 - [Oracle connection strings](https://www.connectionstrings.com/oracle/)
+- [Downloads-oracle12c](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/oracle12c-linux-12201-3608234.html)
 
 ## Book List
 
