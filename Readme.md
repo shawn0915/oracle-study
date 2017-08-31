@@ -13,12 +13,9 @@
 
 > Enhance
 
-- [Oracle ASM](Oracle ASM/Readme.md)
-- [Oracle GoldenGate](Oracle GoldenGate/Readme.md)
-- [Oracle RAC](Oracle RAC/Readme.md)
 - [Oracle XE](Oracle XE/Readme.md)
-
-
+- [HA](HA/Readme.md)
+- [Oracle ASM](Oracle ASM/Readme.md)
 
 
 > 版本 version
@@ -40,7 +37,7 @@
 
 ## Ref
 
-- [OTN](http://www.oracle.com/technetwork/cn/index.html)
+- [Oracle Technology Network, OTN](http://www.oracle.com/technetwork/cn/index.html)
 - [Oracle connection strings](https://www.connectionstrings.com/oracle/)
 - [Downloads-oracle12c](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/oracle12c-linux-12201-3608234.html)
 

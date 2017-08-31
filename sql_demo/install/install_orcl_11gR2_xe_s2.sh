@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# RHEL 7
 echo 'Install Oracle 11g XE Step 2 ...'
 
 # Def
