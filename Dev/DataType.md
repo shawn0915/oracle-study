@@ -33,6 +33,7 @@
   - default: 0
   - NLS_DATE_FORMAT
 - TIMESTAMP(9i)
+  - 与date数据类型相比，timestamp类型可以精确到微秒，微秒的精确范围为0-9，默认为6
   - TIMESTAMP WITH TIME ZONE (TSTZ)
   - TIMESTAMP WITH LOCAL TIME ZONE (TSLTZ)
 
