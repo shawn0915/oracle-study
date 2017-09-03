@@ -26,12 +26,18 @@
 - SIMPLE_INTEGER
   - after 11g
 
-> 日期数据类型
+> 日期数据类型 DATE
 
 - DATE
   - format: DD-MON-YY HH:MI:SS
   - default: 0
   - NLS_DATE_FORMAT
+- TIMESTAMP(9i)
+  - TIMESTAMP WITH TIME ZONE (TSTZ)
+  - TIMESTAMP WITH LOCAL TIME ZONE (TSLTZ)
+
+=> [日期类型函数](func_date.md)
+
 
 > 其他数据类型
 
@@ -51,4 +57,17 @@
 - 用户自定数据
 - AnyType/AnyData/AnyDataSet
 
+> 数据类型转换
+
+- 显式转换
+```oracle
+CHARACTER ==TO_DATE==> DATE ==TO_CHAR==> CHARACTER
+
+CHARACTER ==TO_NUMBER==> NUMBER ==TO_CHAR==> CHARACTER
+```
+- 隐式转换
+```oracle
+VARCHAR2 or CHAR => NUMBER
+VARCHAR2 or CHAR => DATE
+```
 

@@ -1,5 +1,8 @@
 -- ## 其他数据库对象
 
+-- view
+-- sequence
+
 SQL> -- 视图
 SQL> /*
 SQL> 表，是物理概念
@@ -301,9 +304,8 @@ SQL>
 SQL>
 SQL> host cls
 
-SQL> --序列
-SQL> --sequnence
-SQL> --sequence
+SQL> -- 序列
+SQL> -- sequence
 SQL> create sequence myseq;
 
 序列已创建。
@@ -431,11 +433,10 @@ TID TNAME
 
 
 SQL> /*
-SQL> 序列不连续：
-SQL> 1。回滚
+SQL> 序列不连续、裂缝：
+SQL> 1.回滚
 SQL> 2.系统异常
 SQL> 3.多个表同时使用同一序列
-SQL> *、
 SQL> */
 SQL>
 SQL>
@@ -447,5 +448,10 @@ SQL> create index myindex on emp(deptno);
 索引已创建。
 
 
+-- 查询序列
+
+SELECT	sequence_name, min_value, max_value,
+  increment_by, last_number
+FROM	user_sequences;
 
 

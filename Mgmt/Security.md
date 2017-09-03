@@ -6,6 +6,8 @@
 - SYSDBA
 - SYSOPER
 
+> [create-role-demo](../sql_demo/mgmt/create_role.sql)
+
 ## 用户
 
 - SYS
@@ -16,6 +18,8 @@
       - SQL*Plus
 - SYSTEM
   - 存储管理信息或者提供各种Oracle工具和选项
+
+> [create-user-demo](../sql_demo/mgmt/create_user.sql)
 
 ## 安全权限
 

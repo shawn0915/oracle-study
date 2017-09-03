@@ -9,13 +9,13 @@
 
 - schema
 - 数据类型
-- 约束条件状态
-- 表
+- constraints 约束条件状态
+- table 表
 
 > 管理数据和并发处理
 
-- 触发器
-- 锁
+- 触发器 trigger
+- 锁 lock
 - Nowait
 
 > 管理还原数据

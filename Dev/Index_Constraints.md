@@ -17,8 +17,9 @@
 
 # CONSTRAINTS
 
-- NOT NULL
-- 唯一性
-- 主键
-- 外键
-- 校验
+- NOT NULL, 非空
+- UNIQUE, 唯一性
+- PRIMARY KEY, 主键
+- FOREIGN KEY, 外键
+- CHECK, 校验
+

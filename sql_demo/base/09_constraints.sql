@@ -133,8 +133,6 @@ insert into myperson values ('p001','Mike','男','12@12.com',20)
 ORA-00001: 违反唯一约束条件 (SCOTT.MYPERSON_PK)
 
 
-SQL> 、
-SP2-0042: 未知命令 "、" - 其余行忽略。
 SQL> /
 输入 pid 的值:  p002
 输入 pname 的值:  cc
@@ -152,3 +150,17 @@ PID                PNAM GEND EMAIL                              DEPTNO
 ------------------ ---- ---- ------------------------------ ----------
 p001               Mike 男   haha@163.com                           10
 p002               cc   女   kk                                     20
+
+
+-- 无效化约束
+ALTER TABLE		employees
+DISABLE CONSTRAINT	emp_emp_id_pk CASCADE;
+-- 激活无效约束
+ALTER TABLE		employees
+ENABLE CONSTRAINT	emp_emp_id_pk;
+
+-- 查询定义约束的列
+SELECT	constraint_name, constraint_type,
+  search_condition
+FROM	user_constraints
+WHERE	table_name = 'EMPLOYEES';

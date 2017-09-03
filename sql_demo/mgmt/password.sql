@@ -9,7 +9,9 @@ SQL>
 解锁
 SQL>alter user scott account unlock;
 
-改密码>
-SQL>alter user scott identified by 新密码;
-
 */
+
+-- 修改密码
+-- alter user scott identified by 新密码;
+ALTER USER scott
+IDENTIFIED BY lion;
