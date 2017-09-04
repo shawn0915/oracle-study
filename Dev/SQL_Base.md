@@ -151,11 +151,20 @@ REFERENCES(引用)
 > 使用集合运算
 
 ```oracle
+-- 合集
 UNION
 UNION ALL
+/*
+union 和 union all 的区别
+- union 去掉重复记录, union all 不去重
+- union 排序, union all 不排序
+ */
+ 
+-- 交集
 INTERSECT
-MINUX
-UNION/UNION ALL 注意事项
+
+-- 差集
+MINUS
 ```
 
 
