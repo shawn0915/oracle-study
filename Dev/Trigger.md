@@ -19,4 +19,4 @@ CREATE ANY TRIGGER
 EXECUTE
 ```
 
-
+> [trigger-demo](../sql_demo/trigger/12_trigger.sql)

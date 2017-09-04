@@ -103,12 +103,12 @@ DEPTNO DNAME          LOC
 30 SALES          CHICAGO
 40 OPERATIONS     BOSTON
 
-SQL> --少一个部门。。。
+SQL> -- 少一个部门。。。
 SQL> select * from emp where deptno=40;
 
 未选定行
 
-SQL> --40号行政部没人
+SQL> -- 40号行政部没人
 SQL> /*
 SQL> 外连接解决的问题：
 SQL> 当条件不成立的时候，仍然希望在结果中包含不成立的记录
@@ -214,7 +214,7 @@ SQL> --自连接查询大表的话，就会出现性能上的问题
 SQL>
 SQL> --对同一张表的前后两次操作，进行连接
 
---伪列 level
+-- 伪列 level
 
 SQL> select level,empno,ename,mgr
        2  from emp
@@ -244,5 +244,5 @@ LEVEL      EMPNO ENAME             MGR
 
 已选择14行。
 
-SQL> ---start with empno=7844; 可以从任一节点开始
+SQL> -- start with empno=7844; 可以从任一节点开始
 SQL>

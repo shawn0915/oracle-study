@@ -15,6 +15,16 @@ SQL> union     union all
 SQL> intersect
 SQL> minus
 SQL> */
+
+-- union:将两个记录合并,去掉重复项
+select distinct deptno from emp union select deptno from dept;
+-- union all:将两个记录合并,不去掉重复项
+select distinct deptno from emp union all select deptno from dept;
+-- intersect:取两个集合的交集
+select distinct deptno from emp intersect select deptno from dept;
+-- minus:去掉交集(集合A-(集合A和集合B的交集))
+select deptno from dept minus select distinct deptno from emp ;
+
 SQL> select * from emp where deptno=10
 2  union
 3  select * from emp where deptno=20;
