@@ -7,9 +7,21 @@
 - SQLNET.ORA
 - LDAP.ORA
 
+```bash
+%oracle_base%\product\11.2.0\dbhome_1\NETWORK\ADMIN\listener.ora
+%oracle_base%\product\11.2.0\dbhome_1\NETWORK\ADMIN\tnsnames.ora 
+
+```
+
 ## 配置Oralce网络环境
 
 - 网络服务
+```oracle
+-- 实例
+OracleServiceSID
+-- 监听
+OracleOraHOME_NAMETNSListener
+```
 - 监听
 - 修改service_names
 - 专用模式、共享模式
@@ -26,3 +38,5 @@ lsnrctl START|STOP <监听器名称>
 ```oracle
 lsnrctl STOP LISTENER
 ```
+
+> ONCA可以配置网络监听和本地网络服务名

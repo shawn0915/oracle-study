@@ -2,7 +2,7 @@
 
 > Base
 
-- [Arch](Arch/Readme.md)
+- [Arch](Architecture/Readme.md)
 - [Backup](Backup/Readme.md)
 - [Concepts](Concepts/Readme.md)
 - [DEV](Dev/Readme.md)

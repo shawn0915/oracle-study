@@ -1,14 +1,18 @@
 # Oracle Mgmt
 
-- [内存管理](Memory.md)
+- [Install-win](Install_win.md)
+- [Uninstall-win](Uninstall_win.md)
+- [Startup-and-shutdown](Startup_Shutdown.md)
+- [Memory内存管理](Memory.md)
 - [Upgrade](Upgrade.md)
 - [Network](Network.md)
+- [Progress后台进程](Progress.md)
 - [Security](Security.md)
 
 > 管理方案对象
 
-- schema
-- 数据类型
+- schema 模式
+- data type 数据类型
 - constraints 约束条件状态
 - table 表
 
