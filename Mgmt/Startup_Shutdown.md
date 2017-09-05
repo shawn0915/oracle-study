@@ -16,7 +16,7 @@ SHUTDOWN => NOMOUNT => MOUNT=> OPEN
 STARTUP [NOMOUNT|MOUNT|OPEN|FORCE|RESTRICT] [PFILE='pfile_name'];
 ```
 
-> [归档模式](../sql_demo/mgmt/architecture.sql)
+> [归档模式](../sql_demo/mgmt/arch_db_name.sql)
 
 # Shutdown
 

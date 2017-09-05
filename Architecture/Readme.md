@@ -20,11 +20,11 @@ Oracle服务器=Oralce数据库+Oracle实例
 ## 物理结构
 
 - 模式 schema
-- 表空间 tablespace
+- [表空间 tablespace](../sql_demo/mgmt/arch_tablespace.sql)
   - 段 segment
   - 区 extent
   - 块 data blocks
-- 数据库文件
+- [数据库文件](../sql_demo/mgmt/arch_db_file.sql)
   - 控制文件 .ctl
   - 数据文件 .dbf
   - redo日志文件 .log
