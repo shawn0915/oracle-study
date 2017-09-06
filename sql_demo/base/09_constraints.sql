@@ -1,14 +1,16 @@
 -- ## 约束
 
-SQL> -- 约束
-SQL> -- 约束的类型：
+-- 约束的类型 666
 
-SQL> /*
-SQL> not null
-SQL> unique
-SQL> primary key
-SQL> foreign key
-SQL> check
+default
+not null
+unique
+primary key
+foreign key
+check
+
+/*
+
 SQL>
 SQL>
 SQL>

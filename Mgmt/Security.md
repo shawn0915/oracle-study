@@ -5,6 +5,7 @@
 - DBA
 - SYSDBA
 - SYSOPER
+- 自定义
 
 > [create-role-demo](../sql_demo/mgmt/create_role.sql)
 
