@@ -6,6 +6,10 @@
 
 Oracle应用程序快车
 
+## PL/SQL Developer
+
+- [official website](https://www.allroundautomations.com/plsqldev.html)
+
 ## Toad
 
 ```html

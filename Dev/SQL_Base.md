@@ -55,6 +55,7 @@ using 语句
 交叉连接(笛卡尔)
 ```
 
+[sql-demo](../sql_demo/base/04_multi_table_select.sql)
 
 > 分组函数
 
@@ -169,24 +170,6 @@ MINUS
 
 - [sql-demo](../sql_demo/base/06_union.sql)
 
-
-> Oracle 9i/10g 日期时间函数
-
-```oracle
-四种时间数据类型对比
-SYSDATE
-SYSTIMESTAMP
-ADD_MONTHS
-LAST_DAY
-DBTIMEZONE
-SESSIONTIMEZONE
-CURRENT_DATE
-CURRENT_TIMESTAMP
-LOCALTIMESTAMP
-EXTRACT
-MONTHS_BETWEEN
-NEXT_DAY
-```
 
 
 > 增强 GROUP BY ⼦句

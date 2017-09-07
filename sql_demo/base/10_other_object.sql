@@ -1,7 +1,21 @@
 -- ## 其他数据库对象
 
--- view
--- sequence
+/*
+synonym 同义词
+view 视图 viw_
+sequence 序列 seq_
+index 索引
+ */
+
+
+
+
+-- 同义词
+-- 私有同义词
+create synonym emp for scott.emp;
+-- 公有同义词
+create public synonym emp for scott.emp;
+
 
 SQL> -- 视图
 SQL> /*
@@ -238,44 +252,6 @@ insert into view3 values ('222','ki','clerk','7839','17-11月-81',11,2,20)
 ORA-01402: 视图 WITH CHECK OPTION where 子句违规
 
 
-SQL> --
-SQL>
-SQL>
-SQL> create view dept_sal
-  2  as
-  3  select min(sal),max(sal),avg(sal)
-       4  from emp e,dept d
-5  where e.deptno=d.deptno
-6  group by deptno;
-group by deptno
-*
-第 6 行出现错误:
-ORA-00918: 未明确定义列
-
-
-SQL> create view dept_sal
-  2  as
-  3  select min(sal),max(sal),avg(sal)
-       4  from emp e,dept d
-5  where e.deptno=d.deptno
-6  group by e.deptno;
-select min(sal),max(sal),avg(sal)
-                         *
-                         第 3 行出现错误:
-                                  ORA-00998: 必须使用列别名命名此表达式
-
-
-SQL> create view dept_sal
-  2  as
-  3  select min(e.sal),max(e.sal),avg(e.sal)
-       4  from emp e,dept d
-5  where e.deptno=d.deptno
-6  group by e.deptno;
-select min(e.sal),max(e.sal),avg(e.sal)
-                             *
-                             第 3 行出现错误:
-                                      ORA-00998: 必须使用列别名命名此表达式
-
 
 SQL> create view dept_sal
   2  as
@@ -304,8 +280,23 @@ SQL>
 SQL>
 SQL> host cls
 
-SQL> -- 序列
-SQL> -- sequence
+
+/*
+sequence
+序列
+
+
+CREATE SEQUENCE 序列名
+[START  WITH  数字]  起始数字，升序默认为序列最小值，降序默认为序列最大值
+[INCREMENT BY 数字] 步长(正数代表升序，负数代表降序)，默认为1
+[MAXVALUE  数字|NOMAXVALUE] 序列可生成的最大值，NOMAXVALUE（默认值）时升序最大值为1027，降序最大值为-1
+[MINVALUE 数字|NOMINVALUE] 序列的最小值(必须小于等于start with指定的数字，并小于MAXVALUE) ，NOMINVALUE （默认值）时升序最小值为1，降序最小值为-1026
+[CACHE 数字|NOCACHE] 指定内存中预先分配的序号数，NOCACHE（默认值，缓存20个序列号)
+[CYCLE|NOCYCLE]  CYCLE序列到达最大值或最小后，继续从头开始生成，NOCYCLE（默认值）序列到达最大值后停止继续生成值
+
+ */
+
+
 SQL> create sequence myseq;
 
 序列已创建。
@@ -322,17 +313,21 @@ SQL> 	table a,table b，，，都可以用
 SQL> create table testseq
 SQL> (tid number,tname varchar2(20));
 SQL> */
+
+
+SQL> /*
+SQL> 序列不连续、裂缝：
+SQL> 1.回滚
+SQL> 2.系统异常
+SQL> 3.多个表同时使用同一序列
+SQL> */
+SQL>
+SQL>
+
 SQL> create table testseq
   2  (tid number,tname varchar2(20));
 
 表已创建。
-
-SQL> select myseq.CURRVAL from dual;
-select myseq.CURRVAL from dual
-                          *
-第 1 行出现错误:
-ORA-08002: 序列 MYSEQ.CURRVAL 尚未在此会话中定义
-
 
 SQL> select myseq.NEXTVAL from dual;
 
@@ -432,14 +427,26 @@ TID TNAME
 10 AA
 
 
-SQL> /*
-SQL> 序列不连续、裂缝：
-SQL> 1.回滚
-SQL> 2.系统异常
-SQL> 3.多个表同时使用同一序列
-SQL> */
-SQL>
-SQL>
+-- 从1开始，步长为1，没有最大值
+create sequence my_seq
+nomaxvalue
+
+-- 从10开始，步长为2，没有最大值，缓存30个序号
+create sequence my_se2
+start with 10
+increment by 2
+nomaxvalue
+cache 30
+
+-- 从1开始，步长为1，最大值为10，不缓存，到最大值后从头开始生成
+create sequence my_se3
+start with 1
+increment by 1
+maxvalue 10
+nocache
+cycle
+
+
 SQL>
 SQL> -- 索引
 
