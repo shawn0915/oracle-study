@@ -1,17 +1,26 @@
 # Oracle Backup
 
+> 类型
+
+- 物理备份
+- 逻辑备份
+
 > 方式
 
 - 数据库整体备份
 - 表空间备份
 - 数据文件备份
-- 控制文件备份
+- 控制文件备份 pfile
+```oracle
+show parameter spfile;
+show parameter pfile;
+```
 - 文档日志备份
 
 > 备份/恢复工具
 
 - exp/imp
-- expdp/impdp
+- expdp/impdp 数据泵
 - exp+pipe
 
 > 灾备
@@ -73,3 +82,53 @@ rman 恢复 system 表空间
 利用trace文件恢复控制文件
 只读表空间恢复
 ```
+
+
+
+> 备份
+
+冷备份 ——<归档，非归档>
+数据库必须停止，必须备份所有文件
+1、停止数据库（不能以abort方式停止）
+2、备份数据文件、日志文件、控制文件
+3、启动数据库
+
+
+热备份 ——<归档>
+无需停止数据库，以表空间为单位备份
+1、将表空间设置为begin backup
+2、备份相应数据文件
+3、将表空间设置为end backup
+
+
+> 恢复
+
+非归档数据库：
+冷备份结果进行恢复，只能恢复到备份时时间点。
+
+归档数据库：
+可以恢复到发生问题的时间点。
+
+1、普通数据文件，数据库正常运行
+   表空间脱机 offline
+   拷贝上次热备份的文件
+   recover tablespace 表空间名称
+   表空间联机 online
+  
+2、普通数据文件，数据库关闭状态
+   启动数据到Mount状态
+   数据文件脱机
+   拷贝热备份文件
+   recover datafile 数据文件名
+   数据文件联机
+   
+2、系统数据文件，数据库关闭状态
+   启动数据到Mount状态
+   拷贝热备份文件
+   recover datafile 数据文件名
+
+
+
+## Ref
+
+http://www.toutiao.com/i6393659189897462274/?wxshare_count=2&pbid=23980300841
