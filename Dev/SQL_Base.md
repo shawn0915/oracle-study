@@ -46,13 +46,16 @@ distinct 删除重复值
 > 多表查询
 
 ```oracle
-等连接
-自然连接
-using 语句
-不等连接
-自连接
-外连接
-交叉连接(笛卡尔)
+Equijoin 等连接
+Non-equijoin 不等连接 BETWEEN
+NATURAL JOIN 自然连接 , 会以两个表中具有相同名字的列为条件创建等值连接
+USING clause , 使用 USING 子句指定等值连接中需要用到的列
+Self join 自连接
+OUTER JOIN 外连接
+  LEFT OUTER JOIN
+  RIGHT OUTER JOIN
+  FULL OUTER JOIN
+CROSS JOIN 交叉连接(笛卡尔)
 ```
 
 [sql-demo](../sql_demo/base/04_multi_table_select.sql)

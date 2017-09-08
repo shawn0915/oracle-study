@@ -37,7 +37,7 @@ execute immediate '动态sql语句'
 - 预定义异常
 - 用户定义异常
 
-=> [sql-demo](../sql_demo/plsql/plsql.sql)
+=> [sql-demo](../sql_demo/plsql/exception.sql)
 
 
 ## Subprogram 子程序

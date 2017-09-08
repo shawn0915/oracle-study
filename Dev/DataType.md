@@ -1,5 +1,10 @@
 # Data Type
 
+- 字符
+- 数字
+- 日期
+- 其他
+
 > 字符数据类型
 
 - CHAR
@@ -66,9 +71,11 @@ CHARACTER ==TO_DATE==> DATE ==TO_CHAR==> CHARACTER
 
 CHARACTER ==TO_NUMBER==> NUMBER ==TO_CHAR==> CHARACTER
 ```
+[显示转换](img/dataType_trans.png)
 - 隐式转换
 ```oracle
 VARCHAR2 or CHAR => NUMBER
 VARCHAR2 or CHAR => DATE
 ```
+
 
