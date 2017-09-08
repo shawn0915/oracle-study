@@ -7,7 +7,7 @@
 - [Upgrade](Upgrade.md)
 - [Network](Network.md)
 - [Progress后台进程](Progress.md)
-- [Security](Security.md)
+- [Security安全性](Security.md)
 
 > 管理方案对象
 
@@ -28,3 +28,34 @@
 - 切换表空间
 - 设置undo数据保留期限及强制保留
 - 读一致性
+
+> 主动维护
+
+收集统计信息
+AWR
+⽣成ADDM
+Memory Advisor
+Segment Advisor
+SQL Access Advisor
+SQL Tuning Advisor
+
+> 性能管理
+
+硬解析测试
+⽆效索引对性能的影响
+
+> 管理资源
+
+创建资源消耗组(简称资源组)
+设置用户scott和hr的初始化资源组为TEST_GROUP
+资源组映射,调整优先级
+资源计划
+
+> 使用调度程序自动执行任务
+
+基于时间的job
+创建Program
+创建Schedule
+使用program和schedule创建job
+基于事件的job
+作业链

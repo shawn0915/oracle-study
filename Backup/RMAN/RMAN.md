@@ -1,4 +1,4 @@
-# 恢复管理器(RMAN)
+# Oracle Recovery Manager 恢复管理器(RMAN)
 
 > 配置 Oracle Recovery Manager
 
@@ -18,3 +18,4 @@ RMAN 交互方式
 管理备份数据
 启、停块跟踪
 ```
+

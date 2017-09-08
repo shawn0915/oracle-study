@@ -2,11 +2,12 @@
 
 > Base
 
-- [Arch](Architecture/Readme.md)
+- [Architecture](Architecture/Readme.md)
 - [Backup](Backup/Readme.md)
 - [Concepts](Concepts/Readme.md)
 - [DEV](Dev/Readme.md)
 - [Mgmt](Mgmt/Readme.md)
+- [Storage](Storage/Readme.md)
 - [Monitor](Monitor/Readme.md)
 - [Optimize](Optimize/Readme.md)
 - [Utilities](Utilities/Readme.md)
@@ -15,7 +16,6 @@
 
 - [Oracle XE](Oracle_XE/Readme.md)
 - [HA](HA/Readme.md)
-- [Oracle ASM](Oracle_ASM/Readme.md)
 
 
 > 版本 version
@@ -52,6 +52,9 @@
 
 ## Blog
 
+- [盖国强Eygle](http://www.eygle.com/)
+- [侯圣⽂Secooler](http://ocmu.org/)
+- [张乐奕Kamus](http://www.dbform.com/)
 - [崔旭dbstyle](http://www.dbstyle.net/)
 
 ## Book List

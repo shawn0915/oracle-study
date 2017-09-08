@@ -26,7 +26,7 @@ show parameter pfile;
 > 灾备
 
 - [恢复管理器(RMAN)](RMAN/RMAN.md)
-- [Data Guard](Data Guard/Readme.md)
+- [Data Guard](Data%20Guard/Readme.md)
 - [Flashback Database](Flashback/Flashback.md)
 - [Datapump](DataPump/DataPump.md)
 
@@ -83,6 +83,12 @@ rman 恢复 system 表空间
 只读表空间恢复
 ```
 
+> 处理数据库损坏
+
+- DBVERIFY
+- NALYZE
+- DBMS_REPAIR
+
 
 
 > 备份
@@ -131,4 +137,4 @@ rman 恢复 system 表空间
 
 ## Ref
 
-http://www.toutiao.com/i6393659189897462274/?wxshare_count=2&pbid=23980300841
+- [Oracle expdp/impdp导出导入命令及数据库备份](http://www.toutiao.com/i6393659189897462274/?wxshare_count=2&pbid=23980300841)

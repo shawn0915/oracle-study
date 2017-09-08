@@ -1,5 +1,11 @@
 # Oracle Security
 
+- 角色
+- 用户
+- 权限
+- 概要文件
+- 限额
+
 ## 角色
 
 - DBA
@@ -47,6 +53,8 @@ ALTER USER <用户名> PROFILE <概要文件>
 
 ## 限额
 
+
+
 ## 组件
 
 > Oracle Database Vault
@@ -54,9 +62,10 @@ ALTER USER <用户名> PROFILE <概要文件>
 - 规则
 - 领域
 
-```
-http://www.oracle.com/technetwork/cn/tutorials/datavault2-094383-zhs.html
-```
+REF:
+
+- [使用 Oracle Database Vault 限制命令执行](http://www.oracle.com/technetwork/cn/tutorials/datavault2-094383-zhs.html)
+
 
 Oracle Label Security
 
@@ -65,18 +74,24 @@ Transparent Data Encyption
 
 
 
-## 定义者/调用者
+> 定义者/调用者
+
 
 
 > 实施 Oracle 数据库安全性
 
-```oracle
-测试sys用户以普通用户身份登录
-测试远程数据库验证参数
-审计语法及相关参数
-标准数据库审计
-基于值审计
-细粒度审计
-审计相关视图
-```
+- 测试sys用户以普通用户身份登录
+- 测试远程数据库验证参数
+- 审计语法及相关参数
+- 标准数据库审计
+- 基于值审计
+- 细粒度审计
+- 审计相关视图
 
+
+> 数据库安全性
+
+- 透明数据加密(TDE)
+- 数据泵加密 (DP)
+- 外部表加密
+- RMAN 加密
