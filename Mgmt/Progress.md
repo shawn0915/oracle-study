@@ -65,4 +65,4 @@ Oracle数据库有两种运行方式：归档（ARCHIVELOG）和非归档（NO A
 - 在归档方式下运行，在日志切换前，ARCH进程都对已写满的日志存档，以便保存数据库的所有更改，这样有利故障恢复。
 
 
-> [后台进程和内存的关系](img/progress_memory.png)
+![后台进程和内存的关系](img/progress_memory.png)

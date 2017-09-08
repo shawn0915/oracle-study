@@ -50,6 +50,10 @@
 - [oracle-xe-11.2.0-1.0.x86_64.rpm](http://download.oracle.com/otn/linux/oracle11g/xe/oracle-xe-11.2.0-1.0.x86_64.rpm.zip)
 - [win32_11gR2_examples](http://download.oracle.com/otn/nt/oracle11g/112010/win32_11gR2_examples.zip)
 
+## Blog
+
+- [崔旭dbstyle](http://www.dbstyle.net/)
+
 ## Book List
 
 - 《Oracle DBA 工作笔记》 杨建荣

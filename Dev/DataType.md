@@ -71,7 +71,7 @@ CHARACTER ==TO_DATE==> DATE ==TO_CHAR==> CHARACTER
 
 CHARACTER ==TO_NUMBER==> NUMBER ==TO_CHAR==> CHARACTER
 ```
-[显示转换](img/dataType_trans.png)
+![显示转换](img/dataType_trans.png)
 - 隐式转换
 ```oracle
 VARCHAR2 or CHAR => NUMBER
