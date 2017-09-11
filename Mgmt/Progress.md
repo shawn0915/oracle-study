@@ -6,12 +6,12 @@
 
 ## 后台进程
 
-- [ARCH](#ARCH)
-- [CKPT](#CKPT)
-- [DBWn](#DBWn)
-- [LGWR](#LGWR)
-- [PMON](#PMON)
-- [SMON](#SMON)
+- [ARCH](#arch)
+- [CKPT](#ckpt)
+- [DBWn](#dbwn)
+- [LGWR](#lgwr)
+- [PMON](#pmon)
+- [SMON](#smon)
 
 
 ARCH
