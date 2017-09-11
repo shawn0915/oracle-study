@@ -3,3 +3,4 @@
 - ping
 - 高速缓存融合(Cache Fusion)
 
+[SQL-Demo-RAC](../../sql_demo/RAC/rac.sql)

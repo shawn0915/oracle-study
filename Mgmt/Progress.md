@@ -14,8 +14,8 @@
 - [SMON](#smon)
 
 
-ARCH
-------
+### ARCH
+
 ARCH, 归档进程
 
 - 日志存满时将日志信息写到磁盘或磁带，以便磁盘故障的数据库恢复
@@ -30,8 +30,8 @@ Oracle数据库有两种运行方式：归档（ARCHIVELOG）和非归档（NO A
 ![后台进程和内存的关系](img/progress_memory.png)
 
 
-CKPT
-------
+### CKPT
+
 CKPT, 检查点进程, CheckPoint
 
 在特定的时间点，所有DBWn进程将把SGA中所有改变的数据库缓冲区写入到数据文件中。这个事件叫检查点。
@@ -41,8 +41,8 @@ CKPT进程唤醒DBWn进程，更新数据库所有的数据文件和控制文件
 
 
 
-DBWn
-------
+### DBWn
+
 DBWn, 数据库写入进程, Database Writer
 
 数据库写入进程是将数据库缓存中修改的数据块写到磁盘文件中。Oracle数据库最大允许20个数据库写入进程
@@ -52,17 +52,19 @@ DBWn, 数据库写入进程, Database Writer
 
 [sql-demo-查看数据写入进程使用情况](../sql_demo/mgmt/progress.sql)
 
-LGWR
-------
-LGWR, 日志写入进程, Log Writer
+### LGWR
+
+LGWR, 日志写入进程, Redo Log Writer
 
 日志写入进程是将重做日志缓冲区中的内容写入到磁盘文件上。
 - 负责将日志缓冲区中的日志数据写入日志文件（每隔3秒 ，缓存达到1MB或1/3满时，用户提交时，缓冲区的数据写入磁盘前）
 - 系统有多个日志文件，该进程以循环的方式将数据写入文件
 
+磁盘IO瓶颈
 
-SMON
-------
+
+### SMON
+
 SMON, 系统监控进程, System Monitor
 
 当失败的数据库例程重启时，系统监控进程完成实例的恢复工作
@@ -70,8 +72,8 @@ SMON, 系统监控进程, System Monitor
 - 整理数据文件的自由空间，将相邻区域结合起来
 - 释放不再使用的临时段
 
-PMON
-------
+### PMON
+
 PMON, 进程监控进程, Process Monitor
 
 当用户进程失败时，用于完成进程恢复，它将清理失败进程使用的缓冲区，释放失败进程使用的资源
