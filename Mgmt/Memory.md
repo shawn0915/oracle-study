@@ -1,7 +1,8 @@
 # 内存结构
 
-- SGA(System Global Area)
-- PGA(Program Global Areas)
+- SGA(System Global Area) 系统全局区
+- PGA(Program Global Areas) 程序全局区
+
 
 > 监控和管理内存
 
@@ -9,6 +10,15 @@
 - 使⽤多池
 - ⼿动更改large_pool_size
 - 将对象保存到内存中
+
+
+SGA
+------
+
+
+PGA
+------
+
 
 
 ## 内存管理
