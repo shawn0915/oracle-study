@@ -1,6 +1,6 @@
 # Oracle Concepts
 
-- ADDM, 自动化数据库诊断监视器
+- ADDM, Automatic Database Diagnostic Monitor, 自动化数据库诊断监视器
 - [AWR](../Optimize/AWR/AWR.md), 自动化工作负荷仓库
 - CDB, 多租户容器数据库
 - DCA, 数据库配置助手

@@ -6,13 +6,14 @@
 
 ## 后台进程
 
+<span id = "arch">ARCH</span>
 ```oracle
+ARCH
+CKPT
 DBWn
 LGWR
-CKPT
-SMON
 PMON
-ARCH
+SMON
 ```
 
 > DBWn, 数据库写入进程, Database Writer
@@ -54,7 +55,7 @@ CKPT进程唤醒DBWn进程，更新数据库所有的数据文件和控制文件
 - 释放所有当前挂起的锁定，使其可以被其他用户使用 
 - 清除失败的用户进程，释放故障进程使用的资源
 
-> ARCH, 归档进程
+> [ARCH, 归档进程](#arch)
 
 - 日志存满时将日志信息写到磁盘或磁带，以便磁盘故障的数据库恢复
 - 日志写满后开始将数据写入下一个日志文件（日志切换）

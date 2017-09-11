@@ -10,8 +10,6 @@
 
 ## Zabbix
 
-## Orabbix
+## [Orabbix](http://www.smartmarmot.com/wiki/index.php/Orabbix)
 
-```html
-http://www.smartmarmot.com/wiki/index.php/Orabbix
-```
+

@@ -45,6 +45,7 @@
 
 ## Downloads
 
+- [Downloads](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)
 - [Oracle 12c](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/oracle12c-linux-12201-3608234.html)
 - [Oracle 11g R2](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/112010-win32soft-098987.html)
 - [oracle-xe-11.2.0-1.0.x86_64.rpm](http://download.oracle.com/otn/linux/oracle11g/xe/oracle-xe-11.2.0-1.0.x86_64.rpm.zip)
@@ -53,7 +54,7 @@
 ## Blog
 
 - [盖国强Eygle](http://www.eygle.com/)
-- [侯圣⽂Secooler](http://ocmu.org/)
+- [侯圣文Secooler](http://ocmu.org/)
 - [张乐奕Kamus](http://www.dbform.com/)
 - [崔旭dbstyle](http://www.dbstyle.net/)
 
@@ -61,3 +62,4 @@
 
 - 《Oracle DBA 工作笔记》 杨建荣
 - [oracle-essentials-5th](https://www.safaribooksonline.com/library/view/oracle-essentials-5th/9781449343156/)
+- 《OCP/OCA认证考试指南全册: Oracle Database 11g》
