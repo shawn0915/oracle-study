@@ -4,7 +4,7 @@
 - 服务器进程
 - [后台进程](#后台进程)
 
-[SQL-Demo-Progresses](../sql_demo/mgmt/mem_progress.sql)
+[SQL-Demo-Progresses](../../sql_demo/mgmt/mem_progress.sql)
 
 查看系统进程数量。在Linux上，Oracle进程是独立的操作系统进程
 ```bash
@@ -59,7 +59,7 @@ DBWn, Database Writer, 数据库写入进程
 - 将修改后的缓冲区数据写入数据文件中（脏缓存达到阀值，系统中没有多余的空缓冲区来存放数据 ，CKPT 进程触发DBWR ，超时 ）
 - 一个实例可有多个DBWR。在这样的实例中，一些块可写入一磁盘，另一些块可写入其它磁盘
 
-[sql-demo-查看数据写入进程使用情况](../sql_demo/mgmt/mem_progress.sql)
+[sql-demo-查看数据写入进程使用情况](../../sql_demo/mgmt/mem_progress.sql)
 
 ### LGWR
 
@@ -106,7 +106,7 @@ Oracle数据库有两种运行方式：归档（**ARCHIVELOG**）和非归档（
 
 LGWR对联机日志文件中执行写操作，ARCn读取联机日志文件，其他任何进程根本不接触此类文件。
 
-![后台进程和内存的关系](img/progress_memory.png)
+![后台进程和内存的关系](../../Mgmt/img/progress_memory.png)
 
 ### MMON
 

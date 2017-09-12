@@ -11,5 +11,5 @@
 - PDB, 可插拔数据库
 - PGA, Program Global Areas, 程序全局区
 - RMAN, 恢复管理器
-- [SGA](../Mgmt/Memory.md), System Global Area, 系统全局区
+- [SGA](../Architecture/Memory/Memory.md), System Global Area, 系统全局区
 - 回滚段，用来提供Oracle数据库过去某个时间点的数据镜像的

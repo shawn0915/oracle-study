@@ -23,10 +23,11 @@
   - 流内存池 Streams Pool
 - 11g 自动化内存管理
 
-SGA
-------
+## SGA
 
-> 数据结构
+实例共享内存
+
+### 数据结构
 
 - Database Buffer Cache, 数据库高速缓存
 - Shared Pool, 共享内存池 **!最复杂**
@@ -40,17 +41,21 @@ SGA
 Java代码在共享池中缓存
 ```
 - Redo Log Buffer, Redo日志缓存区
+```html
+日志缓冲区的大小在启动时就已经确定，不能动态修改，也不能自动重设。
+```
 - Large Pool, 大内存池
 - Java Pool, Java内存池
 - Streams Pool, 流内存池
 
-> [SQL-Demo-SGA](../sql_demo/mgmt/mem_sga.sql)
+> [SQL-Demo-SGA](../../sql_demo/mgmt/mem_sga.sql)
 
-PGA
-------
-
+## PGA
 
 
-> [SQL-Demo-PGA](../sql_demo/mgmt/mem_pga.sql)
+会话的专用区域
+
+
+> [SQL-Demo-PGA](../../sql_demo/mgmt/mem_pga.sql)
 
 

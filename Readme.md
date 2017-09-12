@@ -7,7 +7,7 @@
 - [Concepts](Concepts/Readme.md)
 - [DEV](Dev/Readme.md)
 - [Mgmt](Mgmt/Readme.md)
-- [Storage](Storage/Readme.md)
+- [Storage](Architecture/Storage/Storage.md)
 - [Monitor](Monitor/Readme.md)
 - [Optimize](Optimize/Readme.md)
 - [Utilities](Utilities/Readme.md)

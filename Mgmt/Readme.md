@@ -1,13 +1,14 @@
-# Oracle Mgmt
+# Oracle Management
 
 - [Install-win](Install_win.md)
 - [Uninstall-win](Uninstall_win.md)
 - [Startup-and-shutdown](Startup_Shutdown.md)
-- [Memory内存管理](Memory.md)
 - [Upgrade](Upgrade.md)
 - [Network](Network.md)
-- [Progress后台进程](Progress.md)
 - [Security安全性](Security.md)
+- [Memory内存管理](../Architecture/Memory/Memory.md)
+- [Progress后台进程](../Architecture/Progress/Progress.md)
+
 
 > 管理方案对象
 

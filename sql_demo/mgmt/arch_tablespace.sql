@@ -69,3 +69,40 @@ ALTER TABLESPACE T_SHAWN READ WRITE;
 ALTER TABLESPACE tmpfile add tempfile '/path/tmpfile.dbf' size 18M;
 -- 修改大小
 ALTER DATABASE tempfile '/path/tmpfile.dbf' resize 28M;
+
+
+/*
+确定表所在的表空间、区间大小、区间所在的文件编号，以及作为区间开始位置的文件块
+ */
+SELECT
+  tablespace_name,
+  extent_id,
+  bytes,
+  file_id,
+  block_id,
+  segment_name
+FROM dba_extents
+WHERE owner = 'SYSTEM' AND segment_name = 'HELP';
+
+SYSTEM	0	65536	1	32016	HELP
+
+/*
+根据名称确定文件
+ */
+SELECT name from v$datafile
+WHERE file#=&file_id;
+
+/u01/app/oracle/oradata/XE/system.dbf
+
+/*
+精确计算出区间在文件中的位置（按它在文件中的开始字节数）
+
+从文件的大约250M处开始
+ */
+SELECT block_size * &block_id FROM dba_tablespaces
+where tablespace_name='&tablespace_name';
+
+BLOCK_SIZE*32016
+----------------
+262275072
+
