@@ -8,12 +8,18 @@
 
 > 启动数据库的顺序
 
-**参数文件-控制文件-日志文件和数据文件**
+**参数文件--控制文件--日志文件和数据文件**
 
 SHUTDOWN => NOMOUNT => MOUNT=> OPEN
 
 ```oracle
 STARTUP [NOMOUNT|MOUNT|OPEN|FORCE|RESTRICT] [PFILE='pfile_name'];
+```
+
+```oracle
+sqlplus /nolog
+connect / as sysdba
+startup;
 ```
 
 > [归档模式](../sql_demo/mgmt/arch_db_name.sql)

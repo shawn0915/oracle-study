@@ -1,11 +1,11 @@
 # Oracle Backup
 
-> 类型
+## 类型
 
 - 物理备份
 - 逻辑备份
 
-> 方式
+## 方式
 
 - 数据库整体备份
 - 表空间备份
@@ -17,20 +17,24 @@ show parameter pfile;
 ```
 - 文档日志备份
 
-> 备份/恢复工具
+## 备份/恢复工具
 
 - exp/imp
 - expdp/impdp 数据泵
 - exp+pipe
 
-> 灾备
+Oracle Secure Backup
+
+管理整个环境的备份：Oracle应用服务器、远程客户端、操作系统文件和数据库。
+
+## 灾备
 
 - [恢复管理器(RMAN)](RMAN/RMAN.md)
 - [Data Guard](Data%20Guard/Readme.md)
 - [Flashback Database](Flashback/Flashback.md)
 - [Datapump](DataPump/DataPump.md)
 
-> 数据迁移
+## 数据迁移
 
 - [DataTrans](DataTrans/Readme.md)
 

@@ -23,16 +23,16 @@
 
 [SQL-Demo](../../sql_demo/mgmt/arch_db_file.sql)
 
-#### Control Files, 控制文件 .ctl
+#### Control Files, 控制文件 controlnn.ctl
 
 多路复用控制文件(multiplexing the controlfile)
 如，所有生产数据库将把三个控制文件副本放在三个独立设备上
 
-#### Database Data Files, 数据文件 .dbf
+#### Database Data Files, 数据文件 tablespacenamenn.dbf
 
 服务器进程对数据文件执行读操作，而DBWn对数据文件执行写操作。
 
-#### Online Redo Logs, 联机Redo日志文件 .log
+#### Online Redo Logs, 联机Redo日志文件 redonn.log
 
 就每个数据库而言，要保证其正常运行，至少必须有两个联机重做日志文件组；
 要保证安全，每组至少要有两个成员。

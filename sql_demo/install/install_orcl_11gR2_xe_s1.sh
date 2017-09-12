@@ -37,6 +37,7 @@ useradd oracle
 echo ${PWD_USER} | passwd --stdin oracle
 
 echo -e '
+export ORACLE_BASE=/u01/app/oracle
 export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
 export ORACLE_SID=XE
 export NLS_LANG=`$ORACLE_HOME/bin/nls_lang.sh`

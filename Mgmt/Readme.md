@@ -1,7 +1,6 @@
 # Oracle Management
 
-- [Install-win](Install_win.md)
-- [Uninstall-win](Uninstall_win.md)
+- [Install](Install/Install.md)
 - [Startup-and-shutdown](Startup_Shutdown.md)
 - [Upgrade](Upgrade.md)
 - [Network](Network.md)
@@ -32,31 +31,31 @@
 
 > 主动维护
 
-收集统计信息
-AWR
-⽣成ADDM
-Memory Advisor
-Segment Advisor
-SQL Access Advisor
-SQL Tuning Advisor
+- 收集统计信息
+- AWR
+- ⽣成ADDM
+- Memory Advisor
+- Segment Advisor
+- SQL Access Advisor
+- SQL Tuning Advisor
 
 > 性能管理
 
-硬解析测试
-⽆效索引对性能的影响
+- 硬解析测试
+- ⽆效索引对性能的影响
 
 > 管理资源
 
-创建资源消耗组(简称资源组)
-设置用户scott和hr的初始化资源组为TEST_GROUP
-资源组映射,调整优先级
-资源计划
+- 创建资源消耗组(简称资源组)
+- 设置用户scott和hr的初始化资源组为TEST_GROUP
+- 资源组映射,调整优先级
+- 资源计划
 
 > 使用调度程序自动执行任务
 
-基于时间的job
-创建Program
-创建Schedule
-使用program和schedule创建job
-基于事件的job
-作业链
+- 基于时间的job
+- 创建Program
+- 创建Schedule
+- 使用program和schedule创建job
+- 基于事件的job
+- 作业链

@@ -1,5 +1,5 @@
 
-> windows系统下彻底清除oracle
+# windows系统下彻底清除oracle
 
 1.删除oracle注册表信息.运行regedit,删除注册表项
    HKEY_LOCAL_MACHINE\SOFTWARE\Oracle

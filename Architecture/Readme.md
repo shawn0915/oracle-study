@@ -17,6 +17,7 @@ Oracle服务器=Oralce数据库+Oracle实例
 实例=后台进程+内存结构
 ```
 
+要创建数据库，实例必须处于NOMOUNT模式
 
 ## Oracle 工作区域
 

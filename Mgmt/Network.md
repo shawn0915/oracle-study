@@ -40,3 +40,9 @@ lsnrctl STOP LISTENER
 ```
 
 > ONCA可以配置网络监听和本地网络服务名
+
+
+## 网络管理
+
+- Oracle Net Manager
+- Oracle Net Configuration Assistant
