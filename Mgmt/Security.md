@@ -10,6 +10,7 @@
 
 - DBA
 - SYSDBA
+  - SYSDBA具有SYSOPER的所有权限
 - SYSOPER
 - 自定义
 

@@ -41,7 +41,7 @@
 
 > Instance Parameter File, 实例参数文件
 
-pfile/spfile
+[pfile/spfile](../../Mgmt/Instance/Instance.md)
 
 > Password File, 口令文件
 
