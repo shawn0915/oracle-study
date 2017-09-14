@@ -2,6 +2,8 @@
 
 - [物理结构](#物理结构)
 - [逻辑结构](#逻辑结构)
+- [ASM](#asm)
+- [Others](#others)
 
 ## 物理结构
 
@@ -10,7 +12,7 @@
   - Control Files, 控制文件
   - Database Data Files, 数据文件
   - Online Redo Logs, 联机Redo日志文件
-  - [Others](#others)
+  - [OtherFiles](#otherfiles)
 - 可插拔数据库(PDB)(12c)
 - 日志档案
 - 块变化跟踪文件
@@ -37,7 +39,7 @@
 就每个数据库而言，要保证其正常运行，至少必须有两个联机重做日志文件组；
 要保证安全，每组至少要有两个成员。
 
-#### Others
+#### OtherFiles
 
 > Instance Parameter File, 实例参数文件
 
@@ -57,9 +59,11 @@
 ## 逻辑结构
 
 - [Tablespace, 表空间](#tablespace)
-  - [Segment, 段](#segement)
-  - Extent, 区
-  - Data Blocks, 块
+- [Segment, 段](#segement)
+- [Extent, 区](#extent)
+- [Data Blocks, 块](#blocks)
+
+![Oracle存储模型](img/Oracle存储模型.png)
 
 ### Tablespace
 
@@ -69,14 +73,42 @@
 
 [SQL-Demo](../../sql_demo/mgmt/arch_tablespace.sql)
 
+OMF, Oracle-Managed Files
+
+> 表空间类型
+
+- SMALLFILE
+
+可以具有多个文件，而且所有数据文件都可以向上重调
+
+- BIGFILE
+
+只能有一个文件
 
 ### Segment
 
 - 一个段可以包含位于多个数据文件的区间。
 - 一个段包含多个区间，一个区间包含多个Oracle块，一个Oracle块包含多个操作系统块。
 
+[SQL-Demo](../../sql_demo/mgmt/arch_segment.sql)
 
-## 其他
+
+### Extent
+
+一个区间是位于一个数据文件的多个连续块。
+
+
+### Blocks
+
+一个Oracle块是一个或多个操作系统块。
+
+Oracle块是数据库的基本I/O单元。
+
+
+## [ASM](ASM/ASM.md)
+
+
+## Others
 
 > 管理方案对象
 

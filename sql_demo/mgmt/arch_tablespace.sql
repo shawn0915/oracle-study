@@ -51,16 +51,15 @@ PERMANENT: 永久表空间，最重要,也是用于存放用户数据表空间
 
 */
 
--- TODO: 已用的已分配空间百分比
 
--- 表空间脱机
+-- 表空间脱机 offline
 ALTER TABLESPACE T_SHAWN OFFLINE;
--- 表空间联机
+-- 表空间联机 online
 ALTER TABLESPACE T_SHAWN ONLINE;
 
--- 表空间只读
+-- 表空间只读 read only
 ALTER TABLESPACE T_SHAWN READ ONLY;
--- 表空间可读写
+-- 表空间可读写 read write
 ALTER TABLESPACE T_SHAWN READ WRITE;
 
 /*
@@ -105,4 +104,59 @@ where tablespace_name='&tablespace_name';
 BLOCK_SIZE*32016
 ----------------
 262275072
+
+
+/*
+表空间使用情况
+
+已用的已分配空间百分比=used/allocated
+*/
+SELECT
+  t.tablespace_name          name,
+  d.allocated,
+  u.used,
+  f.free,
+  t.status,
+  d.cnt,
+  t.contents,
+  t.extent_management        extman,
+  t.segment_space_management segman
+from dba_tablespaces t,
+  (select sum(bytes)/1024/1024 allocated, count(file_id) cnt from dba_data_files
+  where tablespace_name = 'SYSTEM') d,
+  (select sum(bytes)/1024/1024 free from dba_free_space
+  where tablespace_name = 'SYSTEM') f,
+  (select sum(bytes)/1024/1024 used from dba_segments
+  where tablespace_name = 'SYSTEM') u
+where t.tablespace_name = 'SYSTEM';
+
+
+/*
+调整表空间大小
+ */
+ALTER DATABASE DATAFILE filename RESIZE n[M|G|T];
+
+-- 添加数据文件
+ALTER DATABASE storedata
+ADD DATAFILE '/oradata/storedata_01.dbf' size 50m;
+
+/*
+删除表空间
+ */
+DROP TABLESPACE  tablespacename
+[ INCLUING CONTENTS [AND DATAFILES]];
+
+
+/*
+查看任何表空间是否在使用手动管理
+ */
+select tablespace_name,segment_space_management from dba_tablespaces;
+
+SYSTEM	MANUAL
+SYSAUX	AUTO
+UNDOTBS1	MANUAL
+TEMP	MANUAL
+USERS	AUTO
+T_SHAWN	AUTO
+
 
