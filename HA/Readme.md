@@ -4,4 +4,3 @@
 - 透明故障迁移(TAF) Transparent Application Failover
 - [Oracle GoldenGate](GoldenGate/Readme.md)
 - Oracle数据保护
-- [Oracle RAC](RAC/Readme.md)

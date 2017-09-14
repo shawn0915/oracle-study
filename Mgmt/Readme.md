@@ -4,7 +4,7 @@
 - [Instance实例管理](Instance/Instance.md)
 - [Upgrade](Upgrade.md)
 - [Network](Network/Network.md)
-- [Security安全性](Security.md)
+- [Security安全性](Security/Security.md)
 - [Memory内存管理](../Architecture/Memory/Memory.md)
 - [Progress后台进程](../Architecture/Progress/Progress.md)
 

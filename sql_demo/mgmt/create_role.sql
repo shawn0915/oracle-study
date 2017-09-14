@@ -19,6 +19,11 @@ Grant succeeded.
 -- 查看系统所有角色
 SELECT * from dba_roles;
 
+CONNECT	NO	NONE
+RESOURCE	NO	NONE
+DBA	NO	NONE
+
+
 -- 查看角色包含的权限
 SELECT * FROM role_sys_privs WHERE role='DBA';
 SELECT * FROM role_sys_privs WHERE role='ROLE_SHAWN';
