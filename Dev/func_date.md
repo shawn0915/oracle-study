@@ -16,8 +16,8 @@
 
 > Oracle 9i/10g 日期时间函数
 
-```oracle
 四种时间数据类型对比
+```oracle
 SYSDATE
 SYSTIMESTAMP
 ADD_MONTHS

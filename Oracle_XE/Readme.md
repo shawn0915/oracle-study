@@ -6,7 +6,7 @@
 
 ## Install
 
-> Oracle 11g R2 on RHEL 7
+> Oracle 11g R2 on RHEL 7.2
 - [install_orcl_11gR2_xe_s1.sh](../sql_demo/install/install_orcl_11gR2_xe_s1.sh)
 - [install_orcl_11gR2_xe_s2.sh](../sql_demo/install/install_orcl_11gR2_xe_s2.sh)
 
