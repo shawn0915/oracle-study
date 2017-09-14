@@ -13,13 +13,14 @@ Oracle Net 还可用于数据库之间的通信：针对一个数据库的用户
 - [网络服务](#网络服务)
 - [Listener监听](#listener)
 - [service_names](#servicenames)
-- 专用模式、共享模式
 - [解析名称](#解析名称)
+- 专用模式、共享模式
 
 ### Protocol
 
 本地连接所使用的网络协议是IPC。
 
+Oracle Net 11g 可以使用的协议：TCP、SDP、带有安全套接字的TCP、命名管道协议(Named Pipes)。
 
 ### 网络服务
 
@@ -115,24 +116,40 @@ ONCA可以配置网络监听和本地网络服务名
 
 > 本地命名
 
-- [LISTENER.ORA](../../sql_demo/config/listener.ora)
-- **[TNSNAMES.ORA](../../sql_demo/config/tnsnames.ora)**
-- SQLNET.ORA  -- TNS_ADMIN
+- [LISTENER.ORA](../../sql_demo/config/listener.ora)  -- 服务器端文件
+- **[TNSNAMES.ORA](../../sql_demo/config/tnsnames.ora)**  -- 客户端文件
+- SQLNET.ORA  -- 服务器端/客户端文件  -- 可选
 - LDAP.ORA
 
 
 文件路径：
 ```bash
-%oracle_base%\product\11.2.0\dbhome_1\NETWORK\ADMIN\listener.ora
-%oracle_base%\product\11.2.0\dbhome_1\NETWORK\ADMIN\tnsnames.ora 
+%ORACLE_HOME%/network/admin/listener.ora
+%ORACLE_HOME%/network/admin/tnsnames.ora 
 ```
+
+SQLNET.ORA 文件路径：
+```bash
+%ORACLE_HOME%/network/admin
+```
+或位于`TNS_ADMIN`变量指向的目录
+
 
 > 目录命名
 
 LDAP, Lightweight Directory Protocol, 轻量级目录访问协议
 
 
+### 共享服务器体系
 
+两个关键参数
+
+```oracle
+alter system set DISPATCHERS = '(dispatchers=2)(protoctl=tcp)' scope = memory;
+alter system set SHARED_SERVERS = 20;
+```
+
+最适合管理许多完成短期事务的会话。
 
 
 ## 网络管理
