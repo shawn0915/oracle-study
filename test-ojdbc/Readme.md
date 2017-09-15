@@ -1,5 +1,5 @@
 # test-ojdbc
 
-- jdk 1.8
-- oracle 11.2
-- ojdbc 7
+- JDK 1.8
+- Oracle 11.2
+- OJDBC 7

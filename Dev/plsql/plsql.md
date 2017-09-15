@@ -1,6 +1,6 @@
 # PL/SQL
 
-- [demo-sql](../sql_demo/plsql/plsql.sql)
+- [demo-sql](../../sql_demo/plsql/plsql.sql)
 
 ## 数据类型
 
@@ -37,7 +37,7 @@ execute immediate '动态sql语句'
 - 预定义异常
 - 用户定义异常
 
-=> [sql-demo](../sql_demo/plsql/exception.sql)
+=> [sql-demo](../../sql_demo/plsql/exception.sql)
 
 
 ## Subprogram 子程序
@@ -50,8 +50,10 @@ execute immediate '动态sql语句'
 
 > 分类
 
-- PROCEDURE 过程 [sql-demo](../sql_demo/plsql/subprogram.sql)
-- FUNCTION 函数 [sql-demo](../sql_demo/plsql/subprogram.sql)
+- PROCEDURE 过程 [sql-demo](../../sql_demo/plsql/subprogram.sql)
+- FUNCTION 函数 [sql-demo](../../sql_demo/plsql/subprogram.sql)
+
+=> [日期类型**函数**](func_date.md)
 
 > 区别
 

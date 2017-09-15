@@ -290,14 +290,6 @@ SQL> -- 修改表
 SQL>
 SQL>   -- 追加新列，修改列，删除列，重命名列
 SQL>
-SQL> alter table tset1
-2   add photo blob;
-alter table tset1
-*
-第 1 行出现错误:
-ORA-00942: 表或视图不存在
-
-
 SQL> desc test1
 名称                                      是否为空? 类型
 ----------------------------------------- -------- ----------------------------
@@ -330,10 +322,7 @@ SQL> alter table test1 drop column photo;
 
 表已更改。
 
-SQL> dsec test1;
-SP2-0042: 未知命令 "dsec test1" - 其余行忽略。
-SQL> dsec test1
-SP2-0042: 未知命令 "dsec test1" - 其余行忽略。
+
 SQL> desc test1
 名称                                      是否为空? 类型
 ----------------------------------------- -------- ----------------------------
@@ -341,7 +330,7 @@ TID                                                NUMBER
 TNAME                                              VARCHAR2(40)
 HIDATEDATE                                         DATE
 
-SQL>  --rename
+SQL>  -- rename
 SQL> alter table test1 rename column tname to username;
 
 表已更改。

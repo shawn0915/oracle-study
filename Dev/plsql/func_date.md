@@ -16,7 +16,6 @@
 
 > Oracle 9i/10g 日期时间函数
 
-四种时间数据类型对比
 ```oracle
 SYSDATE
 SYSTIMESTAMP
@@ -32,4 +31,4 @@ MONTHS_BETWEEN
 NEXT_DAY
 ```
 
-> [date-time-demo](../sql_demo/base/03_func_date_time.sql)
+> [date-time-demo](../../sql_demo/base/03_func_date_time.sql)
