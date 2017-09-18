@@ -2,19 +2,19 @@
 
 [SQL-DEMO-Index](../../sql_demo/ddl/index.sql)
 
-> 功能
+## 功能
 
 - 强制实施主键约束和唯一约束
 - 提高性能
 
-> 索引类型
+## 索引类型
 
 - B*Tree
   - B => balance
 - 位图索引
   - rowid
 
-> 索引类型选项
+## 索引类型选项
 
 - 唯一或非唯一 unique or non-unique index
 - 反向键索引 reverse key

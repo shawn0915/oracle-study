@@ -12,14 +12,14 @@
 > 管理方案对象
 
 - schema 模式
-- data type 数据类型
-- constraints 约束条件状态
-- table 表
+- [data type 数据类型](../Dev/ddl/DataType.md)
+- [constraints 约束条件状态](../Dev/ddl/Constraints.md)
+- [table 表](../Dev/ddl/Table.md)
 
 > 管理数据和并发处理
 
-- 触发器 trigger
-- 锁 lock
+- [trigger 触发器](../Dev/Trigger.md)
+- [lock 锁](../Dev/Lock.md)
 - Nowait
 
 > 管理还原数据

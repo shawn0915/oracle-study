@@ -10,13 +10,16 @@
 - [Data Type](ddl/DataType.md)
 - [Table](ddl/Table.md)
 - [Index](ddl/Index.md)
+- [Constraints](ddl/Constraints.md)
+- [View](ddl/View.md)
+
 
 
 
 - [Lock](Lock.md)
 - [join](join.md)
 - [cursor](cursor.md)
-- [View](View.md)
+
 - [sequence](Sequence.md)
 - [Trigger](Trigger.md)
 - [Transaction](Transaction.md)
