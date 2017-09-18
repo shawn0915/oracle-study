@@ -53,8 +53,10 @@
 
 ## Book List
 
+- 《Oracle Database 11g & MySQL 5.6开发手册》
 - 《Oracle DBA 工作笔记》 杨建荣
-- [oracle-essentials-5th](https://www.safaribooksonline.com/library/view/oracle-essentials-5th/9781449343156/)
+- [oracle-essentials-5th(Oracle精髓)](https://www.safaribooksonline.com/library/view/oracle-essentials-5th/9781449343156/)
+- 《Oracle性能优化与诊断案例精选》 盖国强 李轶楠 等
 - 《OCP/OCA认证考试指南全册: Oracle Database 11g》(All-in-One), 2011
 
 ## Downloads

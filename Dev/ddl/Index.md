@@ -11,8 +11,10 @@
 
 - B*Tree
   - B => balance
+  - B*Tree索引不包括NULL
 - 位图索引
   - rowid
+  - 位图索引包括NULL
 
 ## 索引类型选项
 
