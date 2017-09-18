@@ -13,8 +13,10 @@
 - [Constraints](ddl/Constraints.md)
 - [View](ddl/View.md)
 - [Sequence](ddl/Sequence.md)
+- [Synonym](ddl/Synonym.md)
 
 
+===
 
 - [Lock](Lock.md)
 - [join](join.md)

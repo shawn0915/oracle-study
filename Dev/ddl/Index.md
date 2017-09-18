@@ -25,10 +25,14 @@
   - 可用于位图索引
 - 基于函数的索引 function based
   - 可用于位图索引
-  - 8i
+  - 8i新特性
 - 升序或降序 ascending or descending
   - 可用于位图索引
 - 不可见索引,invisible index
   - 11g新特性
   - 让优化器在一段时间内忽略索引
 - nosegment index 虚拟索引
+
+## Others
+
+索引有自己的名称空间。
