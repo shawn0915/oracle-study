@@ -16,3 +16,12 @@ REGION_ID REGION_NAME
 
 hr@XE>
 
+
+/*
+需要输入3次JOB替换变量的值
+ */
+SELECT
+  FIRST_NAME,
+  '&JOB'
+FROM EMPLOYEES
+WHERE JOB_ID LIKE '%' || & JOB || '%' AND '&&JOB' BETWEEN 'A' AND 'Z';
