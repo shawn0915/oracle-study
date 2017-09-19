@@ -8,6 +8,12 @@ SQL>
 SQL> --视图
 SQL> --第一个视图： 员工号，姓名，月薪，年薪
 SQL>  --视图本身不包含数据
+
+
+选项：
+
+WITH CHECK OPTION
+WITH READ ONLY
 */
 create view viewtest
 as

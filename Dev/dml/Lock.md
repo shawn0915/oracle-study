@@ -1,6 +1,6 @@
 # Lock 锁
 
-[SQL-DEMO-LOCK](../../sql_demo/dml/lock.sql)
+[SQL-DEMO-LOCK](../../sql_demo/dev/dml/lock.sql)
 
 ## 作用
 

@@ -2,8 +2,8 @@
 
 ## sql-demo-table
 
-- [table.sql](../../sql_demo/ddl/table.sql)
-- [table_create_demo.sql](../../sql_demo/ddl/table_create_demo.sql)
+- [table.sql](../../sql_demo/dev/ddl/table.sql)
+- [table_create_demo.sql](../../sql_demo/dev/ddl/table_create_demo.sql)
 
 ## temporary table
 
@@ -11,4 +11,4 @@
 
 临时表写入用户的临时表空间
 
-[table_temp.sql](../../sql_demo/ddl/table_temporary.sql)
+[table_temp.sql](../../sql_demo/dev/ddl/table_temporary.sql)

@@ -2,7 +2,7 @@
 
 如果违反约束，将自动回滚出现问题的语句，而不是语句中的单个操作，也不是整个事务。
 
-[SQL-DEMO-Constrains](../../sql_demo/ddl/constraints.sql)
+[SQL-DEMO-Constrains](../../sql_demo/dev/ddl/constraints.sql)
 
 ## 约束类型
 
@@ -27,3 +27,10 @@ DISABLE NOVALIDATE
 ```
 
 默认方式下，将启用和验证约束，而且约束不可延迟。
+
+
+## 约束的管理
+
+- Not null 与性能相关的测试
+- 外键的测试
+- 延迟约束

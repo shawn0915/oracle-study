@@ -31,4 +31,4 @@ MONTHS_BETWEEN
 NEXT_DAY
 ```
 
-> [date-time-demo](../../sql_demo/base/03_func_date_time.sql)
+> [date-time-demo](../../sql_demo/dev/base/03_func_date_time.sql)

@@ -10,7 +10,18 @@
 3. 将变更向量写入日志缓冲区
 4. 将变更向量应用于数据库缓冲区缓存
 
+> 操纵数据
 
+- 向表中插入一条记录 insert
+- 从另一个表复制行 insert select
+- 更新表中的行 update
+- 使用子查询更新两列
+- 从表中删除行 delete
+- 删除基于另一个表的行
+- INSERT ALL
+- MERGE
+- DEFAULT 应用
+- 保存点 savepoint
 
 ## INSERT
 
@@ -20,7 +31,7 @@
 另外，使用`VALUES`子句会插入一行，这些值可以是字面值或者作为替换变量的提示。
 
 `INSERT`可以使用一条语句将多行插入多个表。
-[SQL-DEMO-InsertAll](../../sql_demo/dml/insertAll.sql)
+[SQL-DEMO-InsertAll](../../sql_demo/dev/dml/insertAll.sql)
 
 ## UPDATE
 
@@ -40,7 +51,7 @@
 
 ## MERGE
 
-[SQL-DEMO-MERGE](../../sql_demo/dml/merge.sql)
+[SQL-DEMO-MERGE](../../sql_demo/dev/dml/merge.sql)
 
 ## DML语句失败
 
