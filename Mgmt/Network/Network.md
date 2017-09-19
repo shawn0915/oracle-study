@@ -112,12 +112,12 @@ ONCA可以配置网络监听和本地网络服务名
 
 只能使用TCP协议
 
-[sql-demo](../../sql_demo/login/login.sql)
+[sql-demo](../../sql_demo/mgmt/login/login.sql)
 
 > 本地命名
 
-- [LISTENER.ORA](../../sql_demo/config/listener.ora)  -- 服务器端文件
-- **[TNSNAMES.ORA](../../sql_demo/config/tnsnames.ora)**  -- 客户端文件
+- [LISTENER.ORA](../../sql_demo/mgmt/config/listener.ora)  -- 服务器端文件
+- **[TNSNAMES.ORA](../../sql_demo/mgmt/config/tnsnames.ora)**  -- 客户端文件
 - SQLNET.ORA  -- 服务器端/客户端文件  -- 可选
 - LDAP.ORA
 

@@ -16,7 +16,7 @@
 - SYSOPER
 - 自定义
 
-> [create-role-demo](../../sql_demo/mgmt/create_role.sql)
+> [create-role-demo](../../sql_demo/mgmt/security/create_role.sql)
 
 ## User
 
@@ -29,7 +29,7 @@
 - SYSTEM
   - 存储管理信息或者提供各种Oracle工具和选项
 
-[create-user-demo](../../sql_demo/mgmt/create_user.sql)
+[create-user-demo](../../sql_demo/mgmt/security/create_user.sql)
 
 > 用户验证方法
 
@@ -43,7 +43,7 @@
 
 - 系统权限
 
-[sql-demo-grant](../../sql_demo/mgmt/create_role.sql)
+[sql-demo-grant](../../sql_demo/mgmt/security/create_role.sql)
 
 系统权限的撤销不会级联(这与撤销对象权限不同)。
 
@@ -90,7 +90,7 @@ ALTER USER <用户名> PROFILE <概要文件>
 
 ## Quota
 
-[SQL-Demo](../../sql_demo/mgmt/security.sql)
+[SQL-Demo](../../sql_demo/mgmt/security/security.sql)
 
 
 ## Audit

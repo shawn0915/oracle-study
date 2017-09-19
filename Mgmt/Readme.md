@@ -18,7 +18,7 @@
 
 > 管理数据和并发处理
 
-- [trigger 触发器](../Dev/Trigger.md)
+- [trigger 触发器](../Dev/plsql/Trigger.md)
 - [lock 锁](../Dev/Lock.md)
 - Nowait
 

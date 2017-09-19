@@ -1,11 +1,11 @@
 # DEV
 
-## base
+## BASE
 
 - [Oracle SQL Base](SQL_Base.md)
 
 
-## ddl
+## DDL
 
 DDL, Data Definition Language, 数据定义语言
 
@@ -21,7 +21,7 @@ CREATE/ALTER/DROP/TRUNCATE
 - [Synonym](ddl/Synonym.md)
 
 
-### dml
+## DML
 
 DML, Data Manipulation Language, 数据操作语言
 
@@ -29,6 +29,15 @@ SELECT/INSERT/UPDATE/DELETE/MERGE
 
 - [dml](dml/dml.md)
 - [Transaction](dml/Transaction.md)
+
+
+## PL/SQL
+
+PL/SQL是Oracle专有的、在数据库内运行的第三代语言。
+
+- [plsql](plsql/plsql.md)
+
+
 
 
 ===
@@ -44,6 +53,5 @@ COMMIT/ROLLBACK
 - [Lock](Lock.md)
 - [join](join.md)
 - [cursor](cursor.md)
-- [Trigger](Trigger.md)
-- [Transaction](dml/Transaction.md)
-- [plsql](plsql/plsql.md)
+
+

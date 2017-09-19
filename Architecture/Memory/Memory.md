@@ -48,7 +48,7 @@ Java代码在共享池中缓存
 - Java Pool, Java内存池
 - Streams Pool, 流内存池
 
-> [SQL-Demo-SGA](../../sql_demo/mgmt/mem_sga.sql)
+> [SQL-Demo-SGA](../../sql_demo/mgmt/memory/mem_sga.sql)
 
 ## PGA
 
@@ -56,6 +56,6 @@ Java代码在共享池中缓存
 会话的专用区域
 
 
-> [SQL-Demo-PGA](../../sql_demo/mgmt/mem_pga.sql)
+> [SQL-Demo-PGA](../../sql_demo/mgmt/memory/mem_pga.sql)
 
 

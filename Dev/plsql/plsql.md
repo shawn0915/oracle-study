@@ -1,6 +1,20 @@
 # PL/SQL
 
-- [demo-sql](../../sql_demo/plsql/plsql.sql)
+[demo-sql](../../sql_demo/plsql/plsql.sql)
+
+无论PL/SQL存储在何处，都始终在数据库中执行。Java可以运行在数据库中，也可以运行在客户机上。
+
+## 对象
+
+6种常用的对象类型
+
+- [Subprogram-procedure过程](#subprogram)
+- [Subprogram-function函数](#subprogram)
+- [Package程序包](#package)
+- 程序包主体
+- [Trigger触发器](Trigger.md)
+- 类型主体
+
 
 ## 数据类型
 
@@ -40,7 +54,9 @@ execute immediate '动态sql语句'
 => [sql-demo](../../sql_demo/plsql/exception.sql)
 
 
-## Subprogram 子程序
+## Subprogram
+
+子程序
 
 > 组成部分
 
@@ -88,7 +104,9 @@ drop sayhello;
 GRANT EXECUTE ON sayhello TO SHAWN;
 ```
 
-## PACKAGE 程序包
+## PACKAGE
+
+程序包
 
 程序包也是一种数据库对象，是对相关过程、函数、变量、游标和异常等对象的封装。使用程序包可以分类管理过程和函数。 
 

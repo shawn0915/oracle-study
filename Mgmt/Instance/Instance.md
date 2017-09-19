@@ -4,7 +4,7 @@
 
 pfile/spfile
 
-[SQL-Demo-pfile](../../sql_demo/mgmt/inst_pfile.sql)
+[SQL-Demo-pfile](../../sql_demo/mgmt/instance/inst_pfile.sql)
 
 
 ## [启动数据库](Startup.md)
@@ -12,7 +12,7 @@ pfile/spfile
 
 ## 警报日志
 
-[SQL-Demo-alter](../../sql_demo/mgmt/inst_alter.sql)
+[SQL-Demo-alter](../../sql_demo/mgmt/instance/inst_alter.sql)
 
 ## [关闭数据库](Shutdown.md)
 
@@ -38,7 +38,7 @@ DBA_ALTER_HISTORY  -- 描述过去的警报条件的行
 
 数据字典视图只能在`OPEN`模式下查看
 
-[SQL-Demo](../../sql_demo/mgmt/inst_datadic.sql)
+[SQL-Demo](../../sql_demo/mgmt/instance/inst_datadic.sql)
 
 ## 动态性能视图 Vee dollar
 
