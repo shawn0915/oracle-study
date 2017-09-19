@@ -29,7 +29,7 @@ SELECT/INSERT/UPDATE/DELETE/MERGE
 
 - [dml](dml/dml.md)
 - [Transaction](dml/Transaction.md)
-
+- [Lock](dml/Lock.md)
 
 ## PL/SQL
 
@@ -42,15 +42,7 @@ PL/SQL是Oracle专有的、在数据库内运行的第三代语言。
 
 ===
 
-dcl
 
-GRANT/REVOKE
-
-事务控制语句
-COMMIT/ROLLBACK
-
-
-- [Lock](Lock.md)
 - [join](join.md)
 - [cursor](cursor.md)
 

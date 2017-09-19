@@ -19,7 +19,7 @@
 > 管理数据和并发处理
 
 - [trigger 触发器](../Dev/plsql/Trigger.md)
-- [lock 锁](../Dev/Lock.md)
+- [lock 锁](../Dev/dml/Lock.md)
 - Nowait
 
 > 管理还原数据

@@ -48,10 +48,14 @@ COMMIT / ROLLBACK / SAVEPOINT / SELECT FOR UPDATE
 
 任何DDL命令，`GRANT`或`REVOKE`都将提交当前事务。
 
+`SAVEPOINT`让会话回滚部分事务。
+
+
 ## 事务隔离级别
 
 ```oracle
 READ COMMITED
 SERIALIZABLE
 ```
+
 

@@ -1,21 +1,18 @@
 # Lock 锁
 
-> 作用
+[SQL-DEMO-LOCK](../../sql_demo/dml/lock.sql)
+
+## 作用
 
 锁是数据库用来控制共享资源并发访问的机制。
 锁用保护正在被修改的数据，在多用户环境下保持数据的完整性和一致性。
 直到提交或回滚了事务之后，其他用户才可以更新数据
 
 
-> 类型
+## 类型
 
 - 行级锁
-```oracle
-INSERT 
-UPDATE 
-DELETE
-SELECT .. FOR UPDATE 
-```
+  - 默认锁定级别
 - 表级锁
   - 行共享 ROW SHARE, RS
   - 行排他 ROW EXCLUSIVE, RX
@@ -23,15 +20,9 @@ SELECT .. FOR UPDATE
   - 共享行排他 SHARE ROW EXCLUSIVE, SRX
   - 排他 EXCLUSIVE, X
 
-> Dead Lock 死锁
+## Dead Lock 死锁
 
+死锁是**锁定争用**的一种特殊情况，并且通常由数据库本身自动解决。
 
-> 查看和结束锁进程
+死锁是一种程序设计错误。产生原因是试图执行在逻辑上不可行的操作。
 
-```oracle
--- 查看被锁的表和进程
-select * from v$session t1,v$locked_object t2 where t1.sid=t2.session_id;
-
--- 杀掉进程
-alter system kill session 'sid,serial#';
-```
