@@ -28,7 +28,7 @@ DML, Data Manipulation Language, 数据操作语言
 SELECT/INSERT/UPDATE/DELETE/MERGE
 
 - [dml](dml/dml.md)
-
+- [Transaction](dml/Transaction.md)
 
 
 ===
@@ -45,5 +45,5 @@ COMMIT/ROLLBACK
 - [join](join.md)
 - [cursor](cursor.md)
 - [Trigger](Trigger.md)
-- [Transaction](Transaction.md)
+- [Transaction](dml/Transaction.md)
 - [plsql](plsql/plsql.md)
