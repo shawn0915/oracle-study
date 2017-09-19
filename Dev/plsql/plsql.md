@@ -69,7 +69,7 @@ execute immediate '动态sql语句'
 - PROCEDURE 过程 [sql-demo](../../sql_demo/dev/plsql/subprogram.sql)
 - FUNCTION 函数 [sql-demo](../../sql_demo/dev/plsql/subprogram.sql)
 
-=> [日期类型**函数**](func_date.md)
+=> [日期类型**函数**](../function/func_date.md)
 
 > 区别
 

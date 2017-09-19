@@ -1,3 +1,6 @@
+/*
+日期时间函数
+ */
 
 -- 显示数据库所在的时区
 SELECT DBTIMEZONE FROM DUAL;
@@ -5,6 +8,37 @@ SELECT DBTIMEZONE FROM DUAL;
 -- 显示会话所在的时区
 SELECT SESSIONTIMEZONE FROM DUAL;
 
+
+
+-- 日期函数
+
+-- 给指定日期加上指定的月数后的日期值
+SELECT ADD_MONTHS(sysdate,2)  FROM dual;
+
+-- 返回两个日期直接的月份差
+SELECT floor(MONTHS_BETWEEN(sysdate,to_date('2010-02-08','yyyy-mm-dd')))  FROM dual;
+
+-- 返回指定日期当月的最后一天的日期值
+SELECT sysdate,LAST_DAY(SYSDATE) FROM dual;
+
+-- 返回指定日期之后的下一个星期几的日期值，（1~7代表星期日-星期六）
+SELECT NEXT_DAY(sysdate,1) FROM dual;
+
+-- 提取日期中年月日的指定部分(YEAR,MONTH,DAY)
+SELECT EXTRACT(YEAR from sysdate) FROM dual;
+
+-- 提取字符串日期中的时分秒的指定部分(HOUR,MINUTE,SECOND)
+SELECT EXTRACT(HOUR from timestamp '2008-08-08 10:11:12') FROM dual;
+SELECT EXTRACT(MINUTE from timestamp '2008-08-08 10:11:12') FROM dual;
+SELECT EXTRACT(SECOND from timestamp '2008-08-08 10:11:12') FROM dual;
+
+-- 抽取当前时间的时分秒（hh24,mi,ss）
+select to_char(sysdate,'hh24') from dual;
+select to_char(sysdate,'mi') from dual;
+select to_char(sysdate,'ss') from dual;
+
+-- 按指定部分截断当前时间
+select trunc(sysdate,'year') from dual;
 
 SQL> -- 日期函数
 

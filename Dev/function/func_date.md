@@ -1,5 +1,7 @@
 # 日期函数
 
+[SQL-DEMO-DATE-TIME](../../sql_demo/dev/function/func_date_time.sql)
+
 > 日期函数
 
 - TZ_OFFSET
@@ -31,4 +33,4 @@ MONTHS_BETWEEN
 NEXT_DAY
 ```
 
-> [date-time-demo](../../sql_demo/dev/base/03_func_date_time.sql)
+

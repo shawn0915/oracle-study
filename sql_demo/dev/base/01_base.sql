@@ -168,23 +168,7 @@ SQL> 标准
 SQL> orcl不完全遵循，
 SQL> */
 SQL> -- dual 表 伪表
-SQL> -- concat 连接
-SQL> select concat('Hello','World') from dual;
 
-CONCAT('HE
-----------
-HelloWorld
-
-已选择 1 行。
-
-SQL> --连接符
-SQL> select 'Hello'||' World' from dual;
-
-'HELLO'||'W
------------
-Hello World
-
-已选择 1 行。
 
 SQL> -- 查询员工信息：
 SQL> -- ****的薪水是***

@@ -1,49 +1,15 @@
--- ## 单行函数
+/*
+单行函数
+ */
 
 /*
-日期函数
-数字函数
 字符函数
-转换函数
-其他函数
-*/
-
--- 日期函数
-
--- 给指定日期加上指定的月数后的日期值
-SELECT ADD_MONTHS(sysdate,2)  FROM dual;
-
--- 返回两个日期直接的月份差
-SELECT floor(MONTHS_BETWEEN(sysdate,to_date('2010-02-08','yyyy-mm-dd')))  FROM dual;
-
--- 返回指定日期当月的最后一天的日期值
-SELECT sysdate,LAST_DAY(SYSDATE) FROM dual;
-
--- 返回指定日期之后的下一个星期几的日期值，（1~7代表星期日-星期六）
-SELECT NEXT_DAY(sysdate,1) FROM dual;
-
--- 提取日期中年月日的指定部分(YEAR,MONTH,DAY)
-SELECT EXTRACT(YEAR from sysdate) FROM dual;
-
--- 提取字符串日期中的时分秒的指定部分(HOUR,MINUTE,SECOND)
-SELECT EXTRACT(HOUR from timestamp '2008-08-08 10:11:12') FROM dual;
-SELECT EXTRACT(MINUTE from timestamp '2008-08-08 10:11:12') FROM dual;
-SELECT EXTRACT(SECOND from timestamp '2008-08-08 10:11:12') FROM dual;
-
--- 抽取当前时间的时分秒（hh24,mi,ss）
-select to_char(sysdate,'hh24') from dual;
-select to_char(sysdate,'mi') from dual;
-select to_char(sysdate,'ss') from dual;
-
--- 按指定部分截断当前时间
-select trunc(sysdate,'year') from dual;
-
-
-
-SQL> -- 字符函数
-
-SQL> select lower('hello WorLd') 转小写,upper ('hello WorLd') 转大写,initcap('HelLo worLd') 首字母大写
-       2  from dual;
+ */
+SELECT
+  lower('hello WorLd')   转小写,
+  upper('hello WorLd')   转大写,
+  initcap('HelLo worLd') 首字母大写
+FROM dual;
 
 转小写      转大写      首字母大写
 ----------- ----------- -----------
@@ -51,102 +17,136 @@ hello world HELLO WORLD Hello World
 
 已选择 1 行。
 
-SQL> -- substr
-SQL> -- sbustr(a,b) 从a中，第b位开始取，取右边所有的字符
-SQL> select substr('hello world',4,4) from dual;
+hr@XE>
 
-SUBS
-----
-lo w
+
+SQL> -- concat 连接
+SQL> select concat('Hello','World') from dual;
+
+HelloWorld
+
+SQL> -- 连接符
+SQL> select 'Hello'||' World' from dual;
+
+Hello World
 
 SQL> -- length 字符数 lengthb 字节数
 
-
-1* select length('你好') 字符数, lengthb('你好') 字节数 from dual
-SQL> /
+SELECT
+  length('你好')  字符数,
+  lengthb('你好') 字节数
+FROM dual;
 
 字符数     字节数
 ---------- ----------
-2          4
+2	    6
 
+已选择 1 行。
+
+hr@XE>
+
+SQL> -- lpad 左填充， rpad 右填充
 SQL>
-SQL> --instr
-SQL> --在母串中查找子串，找到返回下标（从1开始），否则返回0
-
-
-SQL> select instr('hello world','ll') from dual;
-
-INSTR('HELLOWORLD','LL')
-------------------------
-3
-
-SQL> select instr('hello world','lo') from dual;
-
-INSTR('HELLOWORLD','LO')
-------------------------
-4
-
-SQL> --lpad 左填充， rpad右填充
-SQL> select lpad('abc',10,'*') 左填充,rpad('abc',10,'*') 右填充
-       2  from dual;
+SELECT
+  lpad('abc', 10, '*') 左填充,
+  rpad('abc', 10, '*') 右填充
+FROM dual;
 
 左填充     右填充
 ---------- ----------
 *******abc abc*******
 
-SQL> --trim 去掉前后指定的字符
-SQL> select trim('h' from 'hello world') from dual;
+已选择 1 行。
 
-TRIM('H'FR                                                 )
+
+SQL> -- trim 去掉前后指定的字符
+SELECT trim('h' FROM 'hello world')
+FROM dual;
+
+TRIM('H'FR
 ----------
 ello world
 
-SQL> --replace
-SQL> select replace('hello world','l',' ') from dual;
+已选择 1 行。
 
-REPLACE('HE       '               )
------------
+
+SQL> -- instr (In-string)
+SQL> -- 在母串中查找子串，找到返回下标（从1开始），否则返回0
+-- INSTR函数通常与SUBSTR函数结合使用，以便从电子数据流中提取已编码的数据。
+
+
+SELECT instr('hello world', 'll') FROM DUAL;
+
+INSTR('HELLOWORLD','LL')
+------------------------
+3
+
+已选择 1 行。
+
+SELECT instr('hello world', 'lo') FROM DUAL;
+
+INSTR('HELLOWORLD','LO')
+------------------------
+4
+
+已选择 1 行。
+
+SQL> -- substr
+SQL> -- sbustr(a,b) 从a中，第b位开始取，取右边所有的字符
+SELECT substr('hello world', 4, 4) FROM DUAL;
+
+SUBS
+----
+lo w
+
+已选择 1 行。
+
+SQL> -- replace
+SELECT REPLACE ('hello world', 'l', ' ') FROM DUAL;
+
 he  o wor d
-SQL>
+
+已选择 1 行。
 
 
-SQL> --数字函数  (ROUND, TRUNC )
 
-1  select ROUND(54.456,2) no1,ROUND(23.643,1) no2,ROUND(24.21,0) no3,ROUND(2.43,-1) no4
-     2* from dual
-SQL> /
+-- ===============================================================
 
-NO1        NO2        NO3        NO4
+/*
+数字函数
+ */
+
+-- ROUND
+SELECT ROUND(54.456, 2) no1, ROUND(23.643, 1) no2, ROUND(24.21, 0) no3, ROUND(2.43, -1) no4 FROM DUAL;
+
+NO1	  NO2	     NO3	NO4
 ---------- ---------- ---------- ----------
-54.46       23.6         24          0
+54.46	 23.6	      24	  0
 
-SQL> ed
-已写入 file afiedt.buf
 
-1  select ROUND(54.456,2) no1,ROUND(23.643,1) no2,ROUND(24.21,0) no3,ROUND(222.43,-1) no4
-     2* from dual
-SQL> /
+-- TRUNC
+SELECT TRUNC(54.456, 2) no1, TRUNC(23.643, 1) no2, TRUNC(24.21, 0) no3, TRUNC(222.43, -1) no4 FROM DUAL;
 
-NO1        NO2        NO3        NO4
+NO1	  NO2	     NO3	NO4
 ---------- ---------- ---------- ----------
-54.46       23.6         24        220
+54.45	 23.6	      24	220
 
-SQL> --TRUNC 截断
-SQL> ed
-已写入 file afiedt.buf
 
-1  select TRUNC(54.456,2) no1, TRUNC(23.643,1) no2, TRUNC(24.21,0) no3, TRUNC(222.43,-1) no4
-     2* from dual
-SQL> /
+-- MOD 取余
 
-NO1        NO2        NO3        NO4
----------- ---------- ---------- ----------
-54.45       23.6         24        220
 
-SQL> --时间的截断
-SQL>
-SQL> --MOD 取余
-SQL> host cls
+
+-- ===============================================================
+
+
+
+
+
+
+
+
+
+
 
 
 SQL>
