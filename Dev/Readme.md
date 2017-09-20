@@ -1,5 +1,11 @@
 # DEV
 
+- [DDL](#ddl)
+- [DML](#dml)
+- [PL/SQL](#pl/sql)
+- [单行函数](#单行函数)
+- [多行函数](#多行函数)
+
 ## DDL
 
 DDL, Data Definition Language, 数据定义语言
@@ -69,6 +75,17 @@ like
 &&
 ```
 
+## 单行函数
+
+=> [单行函数](function/Function.md)
+
+## 多行函数
+
+=> [多行函数](function/Function_multi.md)
+
+- 聚合函数
+- 分组函数
+
 
 
 
@@ -80,30 +97,13 @@ like
 
 
 
-> 单行函数
-
-
-- 字符型函数
-- 数值型函数
-- 日期型函数
-- 隐式转换
-- 显式转换(补)
-- 单值通用函数
-- 条件表达式
-
-
 
 > 多表查询
 
 - [join](join.md)
 - [sql-demo](../sql_demo/dev/sql_select/multi_table_select.sql)
 
-> 分组函数
 
-
-- 创建测试表
-  - 聚集
-  - 分组
 
 
 
@@ -164,14 +164,6 @@ MINUS
 [SQL-DEMO-Union](../sql_demo/dev/base/06_union.sql)
 
 
-
-> 增强 GROUP BY ⼦句
-
-```oracle
-GROUP BY
-ROLLUP
-CUBE
-```
 
 
 

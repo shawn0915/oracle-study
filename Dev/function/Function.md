@@ -95,17 +95,20 @@ TO_NUMBER
 
 ### 通用函数
 
+- 单值通用函数
+
 ```oracle
 NVL
 NVL2
 NULLIF
 COALESCE
+```
+
+- 条件表达式
+
+```oracle
 DECODE
 CASE
 ```
 
 
-## 多行函数
-
-- 聚合函数
-- 分组函数

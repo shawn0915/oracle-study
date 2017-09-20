@@ -16,7 +16,7 @@
 - SQL 连接符与单引号的使用
 - Aslias 字段别名
 - ||(连接符)应用
-- distinct 删除重复值
+- `distinct` 删除重复值
 
 ## 演示模式 human_resources
 
