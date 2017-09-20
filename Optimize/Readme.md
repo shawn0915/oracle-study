@@ -18,7 +18,7 @@
 
 # SQL优化
 
-- [表连接](../Dev/join.md)
+- [表连接](../Dev/join/join.md)
 - 思路
   - 简化
   - 统计信息

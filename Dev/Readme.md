@@ -87,6 +87,12 @@ like
 - 分组函数
 
 
+## sql联接
+
+=> [sql联接](join/join.md)
+
+
+
 
 
 =================================================================================
@@ -100,7 +106,7 @@ like
 
 > 多表查询
 
-- [join](join.md)
+- [join](join/join.md)
 - [sql-demo](../sql_demo/dev/sql_select/multi_table_select.sql)
 
 
