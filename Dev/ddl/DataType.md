@@ -53,7 +53,7 @@
 - `INTERVAL YEAR TO MONTH`
 - `INTERVAL DAY TO SECOND`
 
-=> [日期类型**函数**](../function/func_date.md)
+=> [日期类型**函数**](../function/Function.md)
 
 
 ## Others

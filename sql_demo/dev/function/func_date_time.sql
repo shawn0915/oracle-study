@@ -16,7 +16,7 @@ SELECT SESSIONTIMEZONE FROM DUAL;
 SELECT ADD_MONTHS(sysdate,2)  FROM dual;
 
 -- 返回两个日期直接的月份差
-SELECT floor(MONTHS_BETWEEN(sysdate,to_date('2010-02-08','yyyy-mm-dd')))  FROM dual;
+SELECT floor(MONTHS_BETWEEN(sysdate,to_date('2017-9-1','yyyy-mm-dd')))  FROM dual;
 
 -- 返回指定日期当月的最后一天的日期值
 SELECT sysdate,LAST_DAY(SYSDATE) FROM dual;
@@ -47,6 +47,10 @@ SQL> select sysdate from dual;
 SYSDATE
 --------------
 01-8月 -13
+
+select to_char(sysdate, 'fmDDth MONTH') from dual;
+
+20TH SEPTEMBER
 
 SQL> select to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') from dual;
 

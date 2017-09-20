@@ -139,25 +139,24 @@ NO1	  NO2	     NO3	NO4
 -- ===============================================================
 
 
+/*
+转换函数
+ */
+
+-- 查询员工的薪水 货币符号，两位小数，千位符
+SELECT salary, to_char(salary, 'L999,999,999.99') FROM employees;
 
 
+-- ===============================================================
 
 
+/*
+通用函数
+ */
 
 
-
-
-
-
-SQL>
-SQL> --查询员工的薪水 货币符号，两位小数，千位符
-SQL> select sal, to_char(sal,'L9,999.99') from emp;
-
-
-
-SQL> -- 通用函数
-SQL> --nvl2(a,b,c) 当a=null时，返回c，否则返回b
-SQL> select sal*12+nvl2(comm,comm,0) from emp;
+SQL> -- nvl2(a,b,c) 当a=null时，返回c，否则返回b
+SQL> SELECT salary*12+nvl2(commission_pct, commission_pct, 0) FROM employees;
 
 SAL*12+NVL2(COMM,COMM,0)
 ------------------------
@@ -181,27 +180,27 @@ SAL*12+NVL2(COMM,COMM,0)
 
 已选择14行。
 
-SQL> --nullif(a,b) 当a=b时，返回null，否则返回a
-SQL> select nullif('abc','abc') from dual;
+SQL> -- nullif(a,b) 当a=b时，返回null，否则返回a
+SQL> SELECT nullif('abc', 'abc') FROM DUAL;
 
 NUL
 ---
 
 
-SQL> select nullif('abc','abcd') from dual;
+SQL> SELECT nullif('abc', 'abcd') FROM DUAL;
 
 NUL
 ---
 abc
 
-SQL> select coalesce('','1','','2') from dual;
+SQL> SELECT COALESCE ('', '1', '', '2') FROM DUAL;
 
 C
 -
 1
 
-SQL> --从左至右找到第一个不为null的值
-SQL> select sal,comm,coalesce(comm,sal) from emp;
+SQL> -- 从左至右找到第一个不为null的值
+SQL> SELECT salary, commission_pct, COALESCE (commission_pct, salary) FROM employees;
 
 SAL       COMM COALESCE(COMM,SAL)
 ---------- ---------- ------------------
@@ -225,7 +224,7 @@ SAL       COMM COALESCE(COMM,SAL)
 
 已选择14行。
 
-SQL> select sal,comm,coalesce(sal,comm) from emp;
+SQL> SELECT salary, commission_pct, COALESCE (salary, commission_pct) FROM employees;
 
 SAL       COMM COALESCE(SAL,COMM)
 ---------- ---------- ------------------
@@ -249,11 +248,10 @@ SAL       COMM COALESCE(SAL,COMM)
 
 已选择14行。
 
-SQL>
-SQL>
-SQL>
-SQL> --条件表达式
-SQL> if-then-else   )
+
+
+SQL> -- 条件表达式
+SQL> if-then-else
 
 SQL> --CASE表达式
 SQL> --DECODE函数
@@ -292,11 +290,21 @@ MILLER     CLERK           1300       1700
 SQL> ED
 已写入 file afiedt.buf
 
-1  select ename,job,sal 涨前薪水，decode(job,'PRESIDENT',sal+1000,
-2  					'MANAGER',sal+800,
-3  						sal+400)涨后薪水
-4* from emp
-SQL> /
+/*
+decode
+
+if job=PRESIDENT => sal + 1000
+else if job=MANAGER => sal + 800
+else sal + 400
+ */
+SELECT
+  ename,
+  job,
+  sal               涨前薪水,
+  decode(job, 'PRESIDENT', sal + 1000,
+         'MANAGER', sal + 800,
+         sal + 400) 涨后薪水
+FROM emp;
 
 ENAME      JOB         涨前薪水   涨后薪水
 ---------- --------- ---------- ----------
@@ -321,7 +329,7 @@ MILLER     CLERK           1300       1700
 已选择14行。
 
 
-=======================================================================================
+-- ===============================================================
 
 
 -- 4.组函数
