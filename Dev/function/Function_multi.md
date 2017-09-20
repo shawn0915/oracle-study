@@ -3,6 +3,8 @@
 - [聚合函数](#聚合函数)
 - [分组函数](#分组函数)
 
+[SQL-DEMO](../../sql_demo/dev/function/func_group.sql)
+
 ## 聚合函数
 
 
@@ -20,7 +22,7 @@ HAVING
 ```
 
 基本规则：
-1. 它们每次总是作用于一组行。该组可能是数据集划分的许多组的其中之一，或者可能是整个表。分组函数对每个组都执行一次。
+1. 它们每次总是作用于一组行(多行)。该组可能是数据集划分的许多组的其中之一，或者可能是整个表。分组函数对每个组都执行一次。
 2. 除了`COUNT`函数的`COUNT(*)`形式外，所有的分组函数都忽略分组列或者表达式中包含空值的行。
 
 在`SELECT`列表中不是分组函数的所有项必定是`GROUP BY`子句的分组特性(grouping attribute)。
@@ -34,16 +36,14 @@ FROM EMPLOYEES
 GROUP BY DEPARTMENT_ID;
 ```
 
-=========================================
+只有当存在`GROUP BY`子句时才能指定`HAVING`子句，可以在没有`HAVING`子句的情况下指定`GROUP BY`子句。
 
 
-
-
-
-> 增强 GROUP BY ⼦句
+### 增强 GROUP BY ⼦句
 
 ```oracle
-GROUP BY
 ROLLUP
 CUBE
 ```
+
+
