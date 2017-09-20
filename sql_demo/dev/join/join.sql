@@ -1,61 +1,43 @@
--- ## 多表查询
+/*
+sql联接
+多表查询
+ */
+
+-- 等值连接
+-- 查询员工信息： 员工号，姓名，月薪，部门名称
+
+SELECT
+  emp.EMPLOYEE_ID,
+  emp.LAST_NAME,
+  emp.SALARY,
+  dept.DEPARTMENT_NAME
+FROM EMPLOYEES emp, DEPARTMENTS dept
+WHERE emp.DEPARTMENT_ID = dept.DEPARTMENT_ID;
+
+200	Whalen	4400.00	Administration
+201	Hartstein	13000.00	Marketing
+202	Fay	6000.00	Marketing
+...
 
 
+-- 不等值连接
+-- 查询员工信息：姓名 月薪 工资级别
+SELECT *
+FROM tab;
 
-SQL> --等值连接
-SQL> --查询员工信息： 员工号，姓名，月薪，部门名称
-SQL>
+COUNTRIES	TABLE
+DEPARTMENTS	TABLE
+EMPLOYEES	TABLE
+EMP_DETAILS_VIEW	VIEW
+JOBS	TABLE
+JOB_HISTORY	TABLE
+LOCATIONS	TABLE
+REGIONS	TABLE
 
-1  select empno,ename,sal,dname
-     2  from emp,dept
-3* where emp.deptno=dept.deptno
-SQL> /
 
-EMPNO ENAME             SAL DNAME
----------- ---------- ---------- --------------
-7782 CLARK            2450 ACCOUNTING
-7839 KING             5000 ACCOUNTING
-7934 MILLER           1300 ACCOUNTING
-7566 JONES            2975 RESEARCH
-7902 FORD             3000 RESEARCH
-7876 ADAMS            1100 RESEARCH
-7369 SMITH             800 RESEARCH
-7788 SCOTT            3000 RESEARCH
-7521 WARD             1250 SALES
-7844 TURNER           1500 SALES
-7499 ALLEN            1600 SALES
-
-EMPNO ENAME             SAL DNAME
----------- ---------- ---------- --------------
-7900 JAMES             950 SALES
-7698 BLAKE            2850 SALES
-7654 MARTIN           1250 SALES
-
-已选择14行。
-
-SQL> -- 不等值连接
-SQL> --查询员工信息：姓名 月薪 工资级别
-SQL> select * from tab;
-
-TNAME                          TABTYPE  CLUSTERID
------------------------------- ------- ----------
-BONUS                          TABLE
-DEPT                           TABLE
-EMP                            TABLE
-SALGRADE                       TABLE
-
-SQL> select * from salgrade;
-
-GRADE      LOSAL      HISAL
----------- ---------- ----------
-1        700       1200
-2       1201       1400
-3       1401       2000
-4       2001       3000
-5       3001       9999
 
 SQL> select ename,sal,grade
-       2  from emp e,salgrade s
+       2  from emp e,sal s
 3  where e.sal between s.losal and s.hisal;
 
 ENAME             SAL      GRADE
@@ -245,4 +227,4 @@ LEVEL      EMPNO ENAME             MGR
 已选择14行。
 
 SQL> -- start with empno=7844; 可以从任一节点开始
-SQL>
+

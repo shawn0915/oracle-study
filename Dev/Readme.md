@@ -3,8 +3,10 @@
 - [DDL](#ddl)
 - [DML](#dml)
 - [PL/SQL](#pl/sql)
+- [SQL查询限制排序](#sql查询限制排序)
 - [单行函数](#单行函数)
 - [多行函数](#多行函数)
+- [sql联接](#sql联接)
 
 ## DDL
 
@@ -41,7 +43,7 @@ PL/SQL是Oracle专有的、在数据库内运行的第三代语言。
 - [plsql](plsql/plsql.md)
 
 
-## SQL Select, Where, Sort
+## SQL查询限制排序
 
 - [select](sql_select/select.md)
 - [where](#where)
@@ -100,15 +102,6 @@ like
 
 
 - [cursor](cursor.md)
-
-
-
-
-> 多表查询
-
-- [join](join/join.md)
-- [sql-demo](../sql_demo/dev/sql_select/multi_table_select.sql)
-
 
 
 
