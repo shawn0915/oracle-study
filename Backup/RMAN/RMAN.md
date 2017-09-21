@@ -1,5 +1,10 @@
 # Oracle Recovery Manager 恢复管理器(RMAN)
 
+RMAN可以管理整个周期：将数据库从一级存储备份到二级存储，并将备份从二级存储迁移到三级存储。
+可以将这样的系统实现为在故障之后能接近瞬间恢复，同时能在必要时及时恢复数据库。
+
+[SQL-DEMO-RMAN](../../sql_demo/backup/rman.sql)
+
 > 配置 Oracle Recovery Manager
 
 ```html

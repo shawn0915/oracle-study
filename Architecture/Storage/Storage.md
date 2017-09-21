@@ -28,7 +28,9 @@
 #### Control Files, 控制文件 controlnn.ctl
 
 多路复用控制文件(multiplexing the controlfile)
-如，所有生产数据库将把三个控制文件副本放在三个独立设备上
+如，所有生产数据库将把三个控制文件副本放在三个独立设备上。
+
+最多可有8个控制文件的多路复用副本。
 
 #### Database Data Files, 数据文件 tablespacenamenn.dbf
 

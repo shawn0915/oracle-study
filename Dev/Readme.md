@@ -175,8 +175,14 @@ UNION ALL会按自然的顺序返回每个查询的分组行。在结尾添加�
 
 
 
-- [cursor](cursor.md)
+# cursor
 
+- 静态游标
+  - 隐式游标
+  - 显式游标
+- REF游标
+
+[SQL-DEMO-Cursor](../sql_demo/dev/cursor.sql)
 
 
 > 创建和管理表

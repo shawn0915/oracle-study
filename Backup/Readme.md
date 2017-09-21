@@ -1,5 +1,7 @@
 # Oracle Backup
 
+- [备份和恢复配置](backup.md)
+
 ## 类型
 
 - 物理备份
