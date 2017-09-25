@@ -5,22 +5,40 @@ RMAN可以管理整个周期：将数据库从一级存储备份到二级存储�
 
 [SQL-DEMO-RMAN](../../sql_demo/backup/rman.sql)
 
-> 配置 Oracle Recovery Manager
+打开状态的备份只能在数据库处于归档日志模式下才能进行。
+如果数据库处于非归档日志模式，则只能进行关闭状态的备份，并且(如果使用RMAN)数据库必须为加载模式，然后执行干净关闭。
+RMAN脱机备份，数据库必须处于MOUNT模式，只能脱机备份非归档日志数据库，可以是增量备份。
+RMAN从不备份联机重做日志文件或临时文件。它将备份数据文件、归档日志文件、控制文件和spfile文件。
+在创建备份集或压缩的备份集时，RMAN不备份未分配到段的块。这会节省大量的空集。
+如果没有运行级别0备份，那么第一次级别1差异备份或累积备份将实际执行级别0备份。
+可在不执行还原操作的情况下立即使用映像副本。备份到备份集的文件在使用前必须由RMAN从备份集中还原。
+默认加密要求使用一个钱夹和AES 128算法。或者指定一个口令或更长的密钥。
 
-```html
-RMAN 常用命令
-管理flash_recovery_area
-创建RMANcatalog
-控制文件自动备份
+
+## 配置 Oracle Recovery Manager
+
+
+- RMAN 常用命令
+
+```oracle
+list
+report
+delete
 ```
+`DELETE EXPIRED`命令不删除任何文件，它只更新RMAN存储库。`DELETE OBSOLETE`命令将删除文件并相应地更新存储库。
 
-> 使用 Oracle Recovery Manager
+- 管理 flash_recovery_area
+- 创建 RMAN catalog
+- 控制文件自动备份
 
-```html
-RMAN 交互方式
-“干净”备份
-备份
-管理备份数据
-启、停块跟踪
-```
+
+## 使用 Oracle Recovery Manager
+
+
+- RMAN 交互方式
+- “干净”备份
+- 备份
+- 管理备份数据
+- 启、停块跟踪
+
 
