@@ -29,3 +29,34 @@ RMAN>
 RMAN> backup as copy database;
 
 
+/*
+DRA
+ */
+list backup of tablespace sysaux;
+backup as backupset tablespace sysaux;
+
+RMAN> list failure;
+
+RMAN> advise failure;
+
+
+/*
+非归档日志模式下还原数据库
+ */
+shutdown abort;
+startup mount;
+restore database;
+alter database open resetlogs;
+
+
+/*
+确认自动备份未启用
+ */
+RMAN> show controlfile autobackup;
+
+db_unique_name 为 XE 的数据库的 RMAN 配置参数为:
+CONFIGURE CONTROLFILE AUTOBACKUP OFF; # default
+
+-- 启用自动备份并确认
+RMAN> configure autobackup on;
+RMAN> show all;
