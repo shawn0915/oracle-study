@@ -1,9 +1,9 @@
 # Flushback 闪回
 
 - [Flashback Drop](#flashback%20drop)
-- [Flashback Query](#flashback query)
-- [Flashback Database](#flashback database)
-- [Flashback Data Archive](#flashback data archive)
+- [Flashback Query](#flashback%20query)
+- [Flashback Database](#flashback%20database)
+- [Flashback Data Archive](#flashback%20data%20archive)
 
 
 [SQL-DEMO-FLASHBACK](../../sql_demo/backup/flashback.sql)
