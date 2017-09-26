@@ -1,13 +1,21 @@
 # Oracle Backup
 
+- [Backup](#backup)
+- [Recovery](#recovery)
 - [备份和恢复配置](backup.md)
+- [RMAN](RMAN/RMAN.md)
+- [用户管理的备份、还原和恢复](user_mgmt_backup.md)
+- [数据迁移](DataTrans/Readme.md)
 
-## 类型
+
+## Backup
+
+### 类型
 
 - 物理备份
 - 逻辑备份
 
-## 方式
+### 方式
 
 - 数据库整体备份
 - 表空间备份
@@ -19,10 +27,27 @@ show parameter pfile;
 ```
 - 文档日志备份
 
+Oracle Secure Backup：管理整个环境的备份：Oracle应用服务器、远程客户端、操作系统文件和数据库。
 
-## 数据库恢复
+> 冷备份、热备份
 
-- 完全恢复
+冷备份 —— <归档，非归档>
+数据库必须停止，必须备份所有文件
+1. 停止数据库（不能以abort方式停止）
+2. 备份数据文件、日志文件、控制文件
+3. 启动数据库
+
+
+热备份 —— <归档>
+无需停止数据库，以表空间为单位备份
+1. 将表空间设置为begin backup
+2. 备份相应数据文件
+3. 将表空间设置为end backup
+
+
+## Recovery
+
+### 完全恢复
   - 使受损的数据文件脱机
   - 还原受损文件
   - 恢复受损文件
@@ -30,16 +55,49 @@ show parameter pfile;
 
 如果处于非归档日志模式下，那数据文件丢失后的唯一选择是还原整个数据库或删除相关的表空间。不能进行恢复。
 
-- 不完全恢复
+### 不完全恢复
 
 必须以SYSDBA身份连接进行不完整恢复。普通用户和SYSOPER用户都不行。
 任何SET命令(如SET UNTIL/SET NEWNAME/SET DBID)只能在run块中执行，而不能在RMAN提示符下座位单独命令执行。
 
-- 全部文件丢失利用RMAN全备的恢复
-- 利用trace文件恢复控制文件 
-- 只读表空间恢复
+### 全部文件丢失利用RMAN全备的恢复
 
 
+### 利用trace文件恢复控制文件
+
+
+### 只读表空间恢复
+
+
+> 恢复
+
+非归档数据库：
+冷备份结果进行恢复，只能恢复到备份时时间点。
+
+归档数据库：
+可以恢复到发生问题的时间点。
+
+1、普通数据文件，数据库正常运行
+- 表空间脱机 offline
+- 拷贝上次热备份的文件
+- recover tablespace 表空间名称
+- 表空间联机 online
+  
+2、普通数据文件，数据库关闭状态
+- 启动数据到Mount状态
+- 数据文件脱机
+- 拷贝热备份文件
+- recover datafile 数据文件名
+- 数据文件联机
+   
+3、系统数据文件，数据库关闭状态
+- 启动数据到Mount状态
+- 拷贝热备份文件
+- recover datafile 数据文件名
+
+
+
+==============================================================================================
 
 
 ## 备份/恢复工具
@@ -48,21 +106,14 @@ show parameter pfile;
 - expdp/impdp 数据泵
 - exp+pipe
 
-Oracle Secure Backup
+[Oracle expdp/impdp导出导入命令及数据库备份](http://www.toutiao.com/i6393659189897462274/?wxshare_count=2&pbid=23980300841)
 
-管理整个环境的备份：Oracle应用服务器、远程客户端、操作系统文件和数据库。
 
 ## 灾备
 
-- [恢复管理器(RMAN)](RMAN/RMAN.md)
 - [Data Guard](Data%20Guard/Readme.md)
 - [Flashback Database](Flashback/Flashback.md)
 - [Datapump](DataPump/DataPump.md)
-
-## 数据迁移
-
-- [DataTrans](DataTrans/Readme.md)
-
 
 
 > 执行数据库备份
@@ -97,60 +148,9 @@ rman 恢复 system 表空间
 ```
 
 
-
-
 > 处理数据库损坏
 
 - DBVERIFY
 - NALYZE
 - DBMS_REPAIR
 
-
-
-> 备份
-
-冷备份 ——<归档，非归档>
-数据库必须停止，必须备份所有文件
-1、停止数据库（不能以abort方式停止）
-2、备份数据文件、日志文件、控制文件
-3、启动数据库
-
-
-热备份 ——<归档>
-无需停止数据库，以表空间为单位备份
-1、将表空间设置为begin backup
-2、备份相应数据文件
-3、将表空间设置为end backup
-
-
-> 恢复
-
-非归档数据库：
-冷备份结果进行恢复，只能恢复到备份时时间点。
-
-归档数据库：
-可以恢复到发生问题的时间点。
-
-1、普通数据文件，数据库正常运行
-   表空间脱机 offline
-   拷贝上次热备份的文件
-   recover tablespace 表空间名称
-   表空间联机 online
-  
-2、普通数据文件，数据库关闭状态
-   启动数据到Mount状态
-   数据文件脱机
-   拷贝热备份文件
-   recover datafile 数据文件名
-   数据文件联机
-   
-2、系统数据文件，数据库关闭状态
-   启动数据到Mount状态
-   拷贝热备份文件
-   recover datafile 数据文件名
-
-
-
-## Ref
-
-- [Oracle expdp/impdp导出导入命令及数据库备份](http://www.toutiao.com/i6393659189897462274/?wxshare_count=2&pbid=23980300841)
