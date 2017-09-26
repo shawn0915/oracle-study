@@ -1,6 +1,6 @@
 # Flushback 闪回
 
-- [Flashback Drop](#flashback drop)
+- [Flashback Drop](#flashback%20drop)
 - [Flashback Query](#flashback query)
 - [Flashback Database](#flashback database)
 - [Flashback Data Archive](#flashback data archive)
