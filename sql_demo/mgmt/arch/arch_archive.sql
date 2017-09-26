@@ -19,5 +19,18 @@ sys@XE> archive log list
 当前日志序列           675
 sys@XE>
 
+-- 查看归档模式
+sys@XE> archive log list;
+数据库日志模式            存档模式
+自动存档             启用
+存档终点            USE_DB_RECOVERY_FILE_DEST
+最早的联机日志序列     7
+下一个存档日志序列   8
+当前日志序列           8
+sys@XE>
+
 -- 修改为归档模式 archive
 alter database archivelog;
+
+-- 打开数据库
+alter database open;

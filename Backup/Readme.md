@@ -5,6 +5,7 @@
 - [备份和恢复配置](backup.md)
 - [RMAN](RMAN/RMAN.md)
 - [用户管理的备份、还原和恢复](user_mgmt_backup.md)
+- [Flashback闪回](Flashback/Flashback.md)
 - [数据迁移](DataTrans/Readme.md)
 
 
@@ -48,10 +49,11 @@ Oracle Secure Backup：管理整个环境的备份：Oracle应用服务器、远
 ## Recovery
 
 ### 完全恢复
-  - 使受损的数据文件脱机
-  - 还原受损文件
-  - 恢复受损文件
-  - 使恢复的文件联机
+
+- 使受损的数据文件脱机
+- 还原受损文件
+- 恢复受损文件
+- 使恢复的文件联机
 
 如果处于非归档日志模式下，那数据文件丢失后的唯一选择是还原整个数据库或删除相关的表空间。不能进行恢复。
 
@@ -112,7 +114,6 @@ Oracle Secure Backup：管理整个环境的备份：Oracle应用服务器、远
 ## 灾备
 
 - [Data Guard](Data%20Guard/Readme.md)
-- [Flashback Database](Flashback/Flashback.md)
 - [Datapump](DataPump/DataPump.md)
 
 
