@@ -1,14 +1,14 @@
 # Flushback 闪回
 
-- [Flashback Drop](#flashback%20drop)
-- [Flashback Query](#flashback%20query)
-- [Flashback Database](#flashback%20database)
-- [Flashback Data Archive](#flashback%20data%20archive)
+- [Flashback Drop](#flashback_drop)
+- [Flashback Query](#flashback_query)
+- [Flashback Database](#flashback_database)
+- [Flashback Data Archive](#flashback_data_archive)
 
 
 [SQL-DEMO-FLASHBACK](../../sql_demo/backup/flashback.sql)
 
-## Flashback Drop
+## Flashback_Drop
 
 不能对表截断而只能对表删除执行闪回操作。
 
@@ -16,7 +16,7 @@ Flashback Drop命令仅使用于表，但是也会恢复所有相关的对象--�
 
 Flashback Drop不适用于存储在SYSTEM表空间中的表：通过上面介绍的查询不能找到这些表，因为直接将它们删掉并清除了。
 
-## Flashback Query
+## Flashback_Query
 
 闪回查询的三种形式都依赖UNDO段的使用。
 
@@ -40,7 +40,7 @@ Flashback Drop不适用于存储在SYSTEM表空间中的表：通过上面介绍
 
 通常由于约束违例造成的冲突可能使用闪回事务失败。
 
-## Flashback Database
+## Flashback_Database
 
 不同于重做日志，不能多路复用和归档闪回日志，它们是自动创建和管理的。
 闪回数据库要求归档日志模式并使用`ALTER DATABASE OPEN RESETLOGS`来创建数据库的一个新化身。
@@ -62,7 +62,7 @@ SQL*Plus/RMAN/Database Control
 - 使用`RESETLOGS`打开数据库
 
 
-## Flashback Data Archive
+## Flashback_Data_Archive
 
 闪回数据归档
 
