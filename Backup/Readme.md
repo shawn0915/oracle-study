@@ -7,6 +7,7 @@
 - [用户管理的备份、还原和恢复](user_mgmt_backup.md)
 - [Flashback闪回](Flashback/Flashback.md)
 - [数据迁移](DataTrans/Readme.md)
+- [Data Pump](DataPump/DataPump.md)
 
 
 ## Backup
@@ -108,13 +109,11 @@ Oracle Secure Backup：管理整个环境的备份：Oracle应用服务器、远
 - expdp/impdp 数据泵
 - exp+pipe
 
-[Oracle expdp/impdp导出导入命令及数据库备份](http://www.toutiao.com/i6393659189897462274/?wxshare_count=2&pbid=23980300841)
-
 
 ## 灾备
 
 - [Data Guard](Data%20Guard/Readme.md)
-- [Datapump](DataPump/DataPump.md)
+
 
 
 > 执行数据库备份

@@ -7,14 +7,6 @@ IMP  用户名/密码@oracle服务名  file=导出文件名 参数列表
 
 exp user/pwd file=user.dmp buffer=1024000 log=user.log statistics=none indexes=y constraints=y grants=n rows=n;
 
-/*
-数据泵导出导入
- */
-
--- DATA_PUMP_DIR => /u01/app/oracle/admin/XE/dpdump
-
-expdp system/password@XE schemas=orclstaff dumpfile=expdp_0309.dmp DIRECTORY=DATA_PUMP_DIR;
-impdp system/password@XE schemas=orclstaff dumpfile=expdp_0309.dmp DIRECTORY=DATA_PUMP_DIR;
 
 
 -- 最新的文件列表
