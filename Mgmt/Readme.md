@@ -7,7 +7,7 @@
 - [Security安全性](Security/Security.md)
 - [Memory内存管理](../Architecture/Memory/Memory.md)
 - [Progress后台进程](../Architecture/Progress/Progress.md)
-
+- [ResourceManager资源管理](Resource/ResourceManager.md)
 
 > 管理方案对象
 
