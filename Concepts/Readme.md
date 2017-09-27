@@ -1,8 +1,8 @@
 # Oracle Concepts
 
-- ADDM, Automatic Database Diagnostic Monitor, 自动化数据库诊断监视器
+- [ADDM](../Optimize/ADDM/ADDM.md)
 - [ASM](../Architecture/Storage/ASM/ASM.md)
-- [AWR](../Optimize/AWR/AWR.md), 自动化工作负荷仓库
+- [AWR](../Optimize/AWR/AWR.md)
 - CDB, 多租户容器数据库
 - DCA, 数据库配置助手
 - GDK, Globalization Development Kit, 全球化开发工具集, 10g

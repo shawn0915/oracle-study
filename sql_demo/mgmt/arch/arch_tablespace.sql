@@ -130,6 +130,8 @@ from dba_tablespaces t,
   where tablespace_name = 'SYSTEM') u
 where t.tablespace_name = 'SYSTEM';
 
+SYSTEM	370	360.3125	8.6875	ONLINE	1	PERMANENT	LOCAL	MANUAL
+
 
 /*
 调整表空间大小

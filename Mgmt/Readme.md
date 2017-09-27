@@ -33,8 +33,8 @@
 > 主动维护
 
 - 收集统计信息
-- AWR
-- ⽣成ADDM
+- [AWR](../Optimize/AWR/AWR.md)
+- [⽣成ADDM](../Optimize/ADDM/ADDM.md)
 - Memory Advisor
 - Segment Advisor
 - SQL Access Advisor
