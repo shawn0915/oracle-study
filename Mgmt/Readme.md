@@ -8,6 +8,7 @@
 - [Memory内存管理](../Architecture/Memory/Memory.md)
 - [Progress后台进程](../Architecture/Progress/Progress.md)
 - [ResourceManager资源管理](Resource/ResourceManager.md)
+- [Job调度程序](Job/Job.md)
 
 > 管理方案对象
 
@@ -44,18 +45,4 @@
 - 硬解析测试
 - ⽆效索引对性能的影响
 
-> 资源管理
 
-- 创建资源消耗组(简称资源组)
-- 设置用户scott和hr的初始化资源组为TEST_GROUP
-- 资源组映射,调整优先级
-- 资源计划
-
-> 使用调度程序自动执行任务
-
-- 基于时间的job
-- 创建Program
-- 创建Schedule
-- 使用program和schedule创建job
-- 基于事件的job
-- 作业链
