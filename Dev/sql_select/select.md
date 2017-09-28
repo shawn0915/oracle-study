@@ -1,6 +1,6 @@
 # SQL Select
 
-投影、选择、联接这三个概念是SELECT语句功能的基础。
+投影projection、选择、联接这三个概念是SELECT语句功能的基础。
 
 ## 编写基本的 SQL SELECT 语句
 
