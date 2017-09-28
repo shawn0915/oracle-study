@@ -5,7 +5,7 @@
 - [日期数据类型](#date)
 - [其他数据类型](#others)
 
-[SQL-DEMO-datatype](../../sql_demo/dev/ddl/datatype.sql)
+[SQL-DEMO-DataType](../../sql_demo/dev/ddl/datatype.sql)
 
 ## Character
 
@@ -18,7 +18,8 @@
   - max: 32KB, 12c
   - 数据库字符集
 - `NCHAR`/`NVARCHAR2`
-  - NLS, 国家语言字符集
+  - NLS, National Language Support, 国家语言字符集
+    - 全球化
 
 
 ## Number
