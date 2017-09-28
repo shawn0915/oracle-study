@@ -6,3 +6,8 @@ where name in ('maximum PGA allocated', 'total PGA allocated');
 
 total PGA allocated	86553600
 maximum PGA allocated	159060992
+
+/*
+内存顾问
+ */
+SELECT * FROM V$PGA_TARGET_ADVICE;

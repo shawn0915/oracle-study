@@ -5,9 +5,9 @@
 
 > 监控和管理内存
 
-- ⾮默认标准块
-- 使⽤多池
-- ⼿动更改large_pool_size
+- 非默认标准块
+- 使用多池
+- 手动更改large_pool_size
 - 将对象保存到内存中
 
 > 内存管理
@@ -24,6 +24,8 @@
 - 11g 自动化内存管理
 
 ## SGA
+
+[SQL-DEMO-SGA](../../sql_demo/mgmt/memory/mem_sga.sql)
 
 实例共享内存
 
@@ -48,14 +50,32 @@ Java代码在共享池中缓存
 - Java Pool, Java内存池
 - Streams Pool, 流内存池
 
-> [SQL-Demo-SGA](../../sql_demo/mgmt/memory/mem_sga.sql)
+### 自动内存管理, Automatic Memory Management, AMM
+
+`MEMORY_TARGET`
 
 ## PGA
 
+[SQL-DEMO-PGA](../../sql_demo/mgmt/memory/mem_pga.sql)
 
-会话的专用区域
+会话的专用区域。
+
+> 会话特有的数据
+
+- 临时表
+- 排序行
+- 合并位图
+- 变量
+- 调用堆栈
 
 
-> [SQL-Demo-PGA](../../sql_demo/mgmt/memory/mem_pga.sql)
+> 实例参数
 
+```oracle
+WORKAREA_SIZE_POLICY
+PGA_AGGREGATE_TARGET
+```
 
+### 内存顾问
+
+=> [ADDM=>内存顾问](../../Optimize/ADDM/ADDM.md#顾问)
