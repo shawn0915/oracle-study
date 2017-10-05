@@ -15,7 +15,8 @@ yum install -y unixODBC.i686 unixODBC.x86_64 unixODBC-devel.i686 unixODBC-devel.
 
 ## compat-libstdc++
 yum install -y compat-libstdc++-33-3.2.3-72.el7.i686.rpm compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
-
+## ol7
+#yum install -y compat-libstdc++-33.i686 compat-libstdc++-33.x86_64
 
 # sysctl
 echo -e "
