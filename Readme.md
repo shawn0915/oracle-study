@@ -1,40 +1,39 @@
 # Oracle
 
-## Base
+## Content
 
 - [Architecture](Architecture/Readme.md)
 - [Backup](Backup/Readme.md)
 - [Concepts](Concepts/Readme.md)
-- [DEV](Dev/Readme.md)
-- [Mgmt](Mgmt/Readme.md)
+- [Development](Dev/Readme.md)
+- [Management](Mgmt/Readme.md)
 - [Storage](Architecture/Storage/Storage.md)
 - [Monitor](Monitor/Readme.md)
 - [Optimize](Optimize/Readme.md)
 - [Utilities](Utilities/Readme.md)
-
-## Enhance
-
-- [Oracle XE](Oracle_XE/Readme.md)
-- [HA](HA/Readme.md)
-- [RAC](RAC/Readme.md)
+- [High Available](HA/Readme.md)
+  - [RAC](RAC/Readme.md)
 
 ## OCP
 
 => [OCP](OCP/Readme.md)
 
-## Version 版本
+## ReleaseVersion
 
 - Oracle 8 (1997.6)
 - Oracle 8i (1998.9)
 - Oracle 9i (2001.6)
 - Oracle 10g (2003.9)
-- Oracle 11g (2007.11)
-- Oracle 11g R2 (2009)
+- [Oracle 11g (2007.11)](releaseVersion/OracleDatabase11g.md)
+  - Oracle 11g R2 (11.2.0.4) (2009)
+    - [Oracle XE 11g R2](releaseVersion/OracleXE_11gr2.md)
 - Oracle 12c (2013)
-- Oracle 12c R2 (2017)
-- Oracle 18 (2018)
+  - Oracle 12c R2 (2017)
+  - [Oracle 18c (12.2.0.2.0) (2018)](releaseVersion/OracleDatabase18c.md)
 
-## Edition 产品
+
+## Edition
+产品
 
 - Oracle企业版
 - Oracle标准版
@@ -42,10 +41,16 @@
 - Oracle个人版
 - Oracle快速版
 
-## Ref
+## Reference
 
 - [Oracle Technology Network, OTN](http://www.oracle.com/technetwork/cn/index.html)
 - [Oracle connection strings](https://www.connectionstrings.com/oracle/)
+
+### Share
+
+- [致敬618-电子商城秒杀活动技术支持历险记--技术人生系列第二十三期-我和数据中心的故事](https://mp.weixin.qq.com/s/KmE_bUgXNg0RLpFGxWpZOg)
+- [2016 Oracle 十大热门文章精选](https://mp.weixin.qq.com/s/WQTT0RU7sxtaaUAeZCl0PA)
+
 
 ## Blog
 
@@ -54,13 +59,21 @@
 - [张乐奕Kamus](http://www.dbform.com/)
 - [崔旭dbstyle](http://www.dbstyle.net/)
 
-## Book List
+## Books
 
-- 《Oracle Database 11g & MySQL 5.6开发手册》
-- 《Oracle DBA 工作笔记》 杨建荣
+- Oracle Database 11g & MySQL 5.6开发手册
+- Oracle DBA 工作笔记 / 杨建荣
 - [oracle-essentials-5th(Oracle精髓)](https://www.safaribooksonline.com/library/view/oracle-essentials-5th/9781449343156/)
-- 《Oracle性能优化与诊断案例精选》 盖国强 李轶楠 等
-- 《OCP/OCA认证考试指南全册: Oracle Database 11g》(All-in-One), 2011
+- Oracle性能优化与诊断案例精选 / 盖国强 李轶楠
+- OCP/OCA认证考试指南全册: Oracle Database 11g》(All-in-One), 2011
+- Oracle Database 11g & MySQL 5.6开发手册
+- Oracle数据库技术实用详解：教你如何成为10g+OCP
+- 深入数据库体系结构 / Thomas Kyte
+- 构建Oracle高可用环境 / 陈吉平
+- Oracle编程艺术：深入理解数据库体系结构
+- Oracle核心技术
+- Oracle核心技术解密 / 吕海波
+
 
 ## Downloads
 
