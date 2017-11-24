@@ -13,21 +13,28 @@
 > 内存管理
 
 - 9i 自动化PGA管理
+  - WORKAREA_SIZE_POLICY
+  - PGA_AGGREGATE_TARGET
   - 内存颗粒
-- 10g 自动化**SGA**管理
+- 10g 自动化**SGA**管理, ASMM
+  - SGA_TARGET
+  - SGA_MAX_SIZE
   - 数据库高速缓存 Flush Buffer Area
   - 共享内存池 Shared Pool
   - redo日志缓存区 Redo Log Buffer
   - 大内存池 Large Pool
   - Java内存池 Java Pool
   - 流内存池 Streams Pool
-- 11g 自动化内存管理
+- 11g 自动化内存管理, Automatic Memory Management, AMM
+  - MEMORY_TARGET
+
 
 ## SGA
-
-[SQL-DEMO-SGA](../../sql_demo/mgmt/memory/mem_sga.sql)
-
 实例共享内存
+
+[SQL-DEMO-SGA](../../sql_scripts/mgmt/memory/mem_sga.sql)
+
+
 
 ### 数据结构
 
@@ -50,15 +57,13 @@ Java代码在共享池中缓存
 - Java Pool, Java内存池
 - Streams Pool, 流内存池
 
-### 自动内存管理, Automatic Memory Management, AMM
 
-`MEMORY_TARGET`
 
 ## PGA
+会话的专用区域
 
-[SQL-DEMO-PGA](../../sql_demo/mgmt/memory/mem_pga.sql)
+[SQL-DEMO-PGA](../../sql_scripts/mgmt/memory/mem_pga.sql)
 
-会话的专用区域。
 
 > 会话特有的数据
 
@@ -69,12 +74,6 @@ Java代码在共享池中缓存
 - 调用堆栈
 
 
-> 实例参数
-
-```oracle
-WORKAREA_SIZE_POLICY
-PGA_AGGREGATE_TARGET
-```
 
 ### 内存顾问
 

@@ -1,6 +1,6 @@
 # 数据迁移
 
-[SQL-DEMO-DATATRANS](../../sql_demo/backup/dataTrans.sql)
+[SQL-DEMO-DATATRANS](../../sql_scripts/backup/dataTrans.sql)
 
 ## 分类
 

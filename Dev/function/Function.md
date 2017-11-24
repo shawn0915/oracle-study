@@ -1,6 +1,6 @@
 # 单行函数
 
-[SQL-DEMO-FUNCTION](../../sql_demo/dev/function/function.sql)
+[SQL-DEMO-FUNCTION](../../sql_scripts/dev/function/function.sql)
 
 
 ## 类型
@@ -45,7 +45,7 @@ mod -- modulus
 
 ### 日期函数
 
-[SQL-DEMO-DATE-TIME](../../sql_demo/dev/function/func_date_time.sql)
+[SQL-DEMO-DATE-TIME](../../sql_scripts/dev/function/func_date_time.sql)
 
 ```oracle
 ADD_MONTHS

@@ -1,6 +1,6 @@
 # Oracle Recovery Manager 恢复管理器(RMAN)
 
-[SQL-DEMO-RMAN](../../sql_demo/backup/rman.sql)
+[SQL-DEMO-RMAN](../../sql_scripts/backup/rman.sql)
 
 [RMAN Concept](rman_concept.md)
 

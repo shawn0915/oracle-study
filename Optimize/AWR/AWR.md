@@ -1,6 +1,6 @@
 # Automatic Workload Repository (AWR) 自动化工作负荷仓库
 
-- [SQL-DEMO-AWR](../../sql_demo/opt/awr-system.sql)
+- [SQL-DEMO-AWR](../../sql_scripts/opt/awr-system.sql)
 
 ## 简介
 

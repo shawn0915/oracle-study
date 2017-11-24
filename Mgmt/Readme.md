@@ -5,8 +5,8 @@
 - [Upgrade](Upgrade.md)
 - [Network](Network/Network.md)
 - [Security安全性](Security/Security.md)
-- [Memory内存管理](../Architecture/Memory/Memory.md)
-- [Progress后台进程](../Architecture/Progress/Progress.md)
+- [Memory内存管理](../architecture/memory/Memory.md)
+- [Progress后台进程](../architecture/Progress/Progress.md)
 - [ResourceManager资源管理](Resource/ResourceManager.md)
 - [Job调度程序](Job/Job.md)
 

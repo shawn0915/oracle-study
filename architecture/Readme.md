@@ -1,6 +1,6 @@
 # Oracle Database Architecture
 
-- [内存结构](Memory/Memory.md)
+- [内存结构](memory/Memory.md)
   - SGA
   - PGA
 - [进程结构](Progress/Progress.md)

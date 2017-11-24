@@ -17,7 +17,7 @@
 ```
 - 启动数据库
 
-[command-demo](../../sql_demo/mgmt/instance/inst_startup.sql)
+[command-demo](../../sql_scripts/mgmt/instance/inst_startup.sql)
 
 
 SHUTDOWN => NOMOUNT **参数文件** => MOUNT **控制文件** => OPEN **日志文件和数据文件**
@@ -25,4 +25,4 @@ SHUTDOWN => NOMOUNT **参数文件** => MOUNT **控制文件** => OPEN **日志�
 
 ## 归档模式
 
-[sql-demo-数据库名称](../../sql_demo/mgmt/arch/arch_db_name.sql)
+[sql-demo-数据库名称](../../sql_scripts/mgmt/arch/arch_db_name.sql)

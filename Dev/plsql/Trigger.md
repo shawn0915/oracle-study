@@ -2,7 +2,7 @@
 
 数据库触发器是一种特殊的PL/SQL对象，因为我们无法手动调用这种对象。我们只能通过触发事件来运行触发器。
 
-[SQL-DEMO-trigger](../../sql_demo/dev/plsql/trigger/trigger.sql)
+[SQL-DEMO-trigger](../../sql_scripts/dev/plsql/trigger/trigger.sql)
 
 > 触发器是当特定事件出现时自动执行的存储过程
 

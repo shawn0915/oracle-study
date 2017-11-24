@@ -5,7 +5,7 @@ Oracle Net 的旧称是 Sqlnet。
 将SQL语句从用户进程传送至服务器进程，并将结果从服务器进程取回至用户进程。
 
 Oracle Net 还可用于数据库之间的通信：针对一个数据库的用户会话可以执行针对另一个数据库的SQL语句。 
-[sql-demo](../../sql_demo/mgmt/net.sql)
+[sql-demo](../../sql_scripts/mgmt/net.sql)
 
 ## 配置Oralce网络环境
 
@@ -112,12 +112,12 @@ ONCA可以配置网络监听和本地网络服务名
 
 只能使用TCP协议
 
-[sql-demo](../../sql_demo/mgmt/login/login.sql)
+[sql-demo](../../sql_scripts/mgmt/login/login.sql)
 
 > 本地命名
 
-- [LISTENER.ORA](../../sql_demo/mgmt/config/listener.ora)  -- 服务器端文件
-- **[TNSNAMES.ORA](../../sql_demo/mgmt/config/tnsnames.ora)**  -- 客户端文件
+- [LISTENER.ORA](../../sql_scripts/mgmt/config/listener.ora)  -- 服务器端文件
+- **[TNSNAMES.ORA](../../sql_scripts/mgmt/config/tnsnames.ora)**  -- 客户端文件
 - SQLNET.ORA  -- 服务器端/客户端文件  -- 可选
 - LDAP.ORA
 

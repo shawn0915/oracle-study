@@ -2,7 +2,7 @@
 
 一个服务器端应用程序。
 
-[SQL-DEMO-DATAPUMP](../../sql_demo/backup/dataPump.sql)
+[SQL-DEMO-DATAPUMP](../../sql_scripts/backup/dataPump.sql)
 
 ## 进程
 

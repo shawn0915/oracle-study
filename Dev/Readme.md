@@ -48,7 +48,7 @@ PL/SQL是Oracle专有的、在数据库内运行的第三代语言。
 
 ## SQL查询限制排序
 
-- [select](sql_select/select.md)
+- [select](select/Select.md)
 - [where](#where)
 - [order](#order)
 - [&符号替换](#and符号替换)
@@ -68,12 +68,12 @@ like
 
 ### order
 
-[SQL-DEMO-Order](../sql_demo/dev/sql_select/order.sql)
+[SQL-DEMO-Order](../sql_scripts/dev/sql_select/order.sql)
 
 
 ### and符号替换
 
-[SQL-DEMO-and-replace](../sql_demo/dev/sql_select/and-replace.sql)
+[SQL-DEMO-and-replace](../sql_scripts/dev/sql_select/and-replace.sql)
 
 ```oracle
 &
@@ -99,7 +99,7 @@ like
 
 ## SubQuery子查询
 
-[SQL-DEMO-SubQuery](../sql_demo/dev/sql_select/sub_select.sql)
+[SQL-DEMO-SubQuery](../sql_scripts/dev/sql_select/sub_select.sql)
 
 - 查询条件中的子查询
 - 建表语句中的子查询
@@ -137,7 +137,7 @@ like
 
 ## 集合运算符
 
-[SQL-DEMO-Union](../sql_demo/dev/union/union.sql)
+[SQL-DEMO-Union](../sql_scripts/dev/union/union.sql)
 
 ### Oracle集合运算符
 
@@ -182,7 +182,7 @@ UNION ALL会按自然的顺序返回每个查询的分组行。在结尾添加�
   - 显式游标
 - REF游标
 
-[SQL-DEMO-Cursor](../sql_demo/dev/cursor.sql)
+[SQL-DEMO-Cursor](../sql_scripts/dev/cursor.sql)
 
 
 > 创建和管理表

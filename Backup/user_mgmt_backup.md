@@ -1,6 +1,6 @@
 # 用户管理的备份、还原和恢复
 
-[SQL-DEMO](../sql_demo/backup/user_mgmt_backup.sql)
+[SQL-DEMO](../sql_scripts/backup/user_mgmt_backup.sql)
 
 数据库用户，而非系统管理用户。
 

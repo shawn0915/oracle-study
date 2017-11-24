@@ -2,7 +2,7 @@
 
 - [物理结构](#物理结构)
 - [逻辑结构](#逻辑结构)
-- [ASM](#asm)
+- [ASM](ASM/ASM.md)
 - [Others](#others)
 
 ## 物理结构
@@ -23,7 +23,7 @@
 
 ### 数据库文件
 
-[SQL-Demo](../../sql_demo/mgmt/arch/arch_db_file.sql)
+[SQL-Demo](../../sql_scripts/mgmt/arch/arch_db_file.sql)
 
 #### Control Files, 控制文件 controlnn.ctl
 
@@ -73,7 +73,7 @@
 - 表空间可由多个数据文件组成。
 - 元数据作为一组段存储在SYSTEM和SYSAUX表空间。
 
-[SQL-Demo](../../sql_demo/mgmt/arch/arch_tablespace.sql)
+[SQL-Demo](../../sql_scripts/mgmt/arch/arch_tablespace.sql)
 
 OMF, Oracle-Managed Files
 
@@ -92,7 +92,7 @@ OMF, Oracle-Managed Files
 - 一个段可以包含位于多个数据文件的区间。
 - 一个段包含多个区间，一个区间包含多个Oracle块，一个Oracle块包含多个操作系统块。
 
-[SQL-Demo](../../sql_demo/mgmt/arch/arch_segment.sql)
+[SQL-Demo](../../sql_scripts/mgmt/arch/arch_segment.sql)
 
 
 ### Extent
@@ -107,7 +107,6 @@ OMF, Oracle-Managed Files
 Oracle块是数据库的基本I/O单元。
 
 
-## [ASM](ASM/ASM.md)
 
 
 ## Others

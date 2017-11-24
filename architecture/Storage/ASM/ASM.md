@@ -1,4 +1,11 @@
 # Oracle Automatic Storage Management (ASM)
+自动存储管理
+
+## Evolution
+
+- 数据字典管理 => 本地管理表空间
+- 手工段管理MSSM => 自动段管理ASSM
+- RAW/FILE SYSTEM => ASM
 
 ## 逻辑卷管理器
 

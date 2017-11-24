@@ -1,6 +1,6 @@
 # 表连接
 
-[SQL-DEMO-JOIN](../../sql_demo/dev/join/join.sql)
+[SQL-DEMO-JOIN](../../sql_scripts/dev/join/join.sql)
 
 > Oracle 6
 

@@ -22,5 +22,5 @@
 
 HR实体-关系图
 
-![HR_E-R](img/HR_E-R.png)
+![HR_E-R](../img/HR_E-R.png)
 

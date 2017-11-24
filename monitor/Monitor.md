@@ -1,8 +1,14 @@
 # Oracle Monitor
 
+## Oracle SQL Monitor (OSM)
+
+- [sql-monitor-demo-sql](../../sql_scripts/mon/sql_monitor-system.sql)
+
 ## EM
 
 Oracle Enterprise Manager Database Control
+
+SQL Monitor Report
 
 ## Grid Control
 

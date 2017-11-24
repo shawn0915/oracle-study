@@ -2,7 +2,7 @@
 
 如果违反约束，将自动回滚出现问题的语句，而不是语句中的单个操作，也不是整个事务。
 
-[SQL-DEMO-Constrains](../../sql_demo/dev/ddl/constraints.sql)
+[SQL-DEMO-Constrains](../../sql_scripts/dev/ddl/constraints.sql)
 
 ## 约束类型
 

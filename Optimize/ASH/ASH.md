@@ -18,4 +18,4 @@ dba_hist_active_sess_history
 
 > 实例SQL
 
-- [ash-demo-sql](../../sql_demo/opt/ash-system.sql)
+- [ash-demo-sql](../../sql_scripts/opt/ash-system.sql)

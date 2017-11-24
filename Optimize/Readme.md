@@ -6,7 +6,7 @@
 - [ADDM](ADDM/ADDM.md)
 - [ASH](ASH/ASH.md)
 - [SQL Profile](SQL_Profile/Readme.md)
-- [SQL Monitor](SQL_Monitor/Readme.md)
+- [SQL Monitor](../monitor/Monitor.md)
 - sqltrpt
 - [报警和阈值](#报警和阈值)
 - [Database Replay](#database_replay)

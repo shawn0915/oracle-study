@@ -2,17 +2,17 @@
 
 ## Content
 
-- [Architecture](Architecture/Readme.md)
+- [Architecture](architecture/Readme.md)
 - [Backup](Backup/Readme.md)
 - [Concepts](Concepts/Readme.md)
 - [Development](Dev/Readme.md)
 - [Management](Mgmt/Readme.md)
-- [Storage](Architecture/Storage/Storage.md)
-- [Monitor](Monitor/Readme.md)
+- [Storage](architecture/Storage/Storage.md)
+- [Monitor](monitor/Monitor.md)
 - [Optimize](Optimize/Readme.md)
 - [Utilities](Utilities/Readme.md)
-- [High Available](HA/Readme.md)
-  - [RAC](RAC/Readme.md)
+- [High Available](highAvaliability/OracleHA.md)
+  - [**RAC**](highAvaliability/rac/RAC.md)
 
 ## OCP
 
@@ -48,9 +48,10 @@
 
 ### Share
 
+- [Oracle公众号推荐下载资源](https://mp.weixin.qq.com/s/JisneEItduIa87gcg4cJdA)
 - [致敬618-电子商城秒杀活动技术支持历险记--技术人生系列第二十三期-我和数据中心的故事](https://mp.weixin.qq.com/s/KmE_bUgXNg0RLpFGxWpZOg)
 - [2016 Oracle 十大热门文章精选](https://mp.weixin.qq.com/s/WQTT0RU7sxtaaUAeZCl0PA)
-
+- [【DBA+热议话题】灾备故障上了红头文件，容灾技术到底哪家强？](https://mp.weixin.qq.com/s/eXxky8SNbZat3TEDAeXv-g)
 
 ## Blog
 

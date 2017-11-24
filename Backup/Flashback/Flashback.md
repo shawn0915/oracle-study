@@ -6,7 +6,7 @@
 - [Flashback Data Archive](#flashback_data_archive)
 
 
-[SQL-DEMO-FLASHBACK](../../sql_demo/backup/flashback.sql)
+[SQL-DEMO-FLASHBACK](../../sql_scripts/backup/flashback.sql)
 
 ## Flashback_Drop
 

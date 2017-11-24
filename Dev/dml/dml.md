@@ -31,7 +31,7 @@
 另外，使用`VALUES`子句会插入一行，这些值可以是字面值或者作为替换变量的提示。
 
 `INSERT`可以使用一条语句将多行插入多个表。
-[SQL-DEMO-InsertAll](../../sql_demo/dev/dml/insertAll.sql)
+[SQL-DEMO-InsertAll](../../sql_scripts/dev/dml/insertAll.sql)
 
 ## UPDATE
 
@@ -51,7 +51,7 @@
 
 ## MERGE
 
-[SQL-DEMO-MERGE](../../sql_demo/dev/dml/merge.sql)
+[SQL-DEMO-MERGE](../../sql_scripts/dev/dml/merge.sql)
 
 ## DML语句失败
 
