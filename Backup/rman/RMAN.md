@@ -1,6 +1,6 @@
 # Oracle Recovery Manager 恢复管理器(RMAN)
 
-[SQL-DEMO-RMAN](../../sql_scripts/backup/rman.sql)
+[SQL-DEMO-RMAN](../../scripts/backup/rman.sql)
 
 [RMAN Concept](rman_concept.md)
 
@@ -86,3 +86,6 @@ RMAN可执行文件的版本必须与目标数据库相同，并且低于或等�
 - 使用动态性能视图`V$BACKUP_ASYNC_IO`来监视异步RMAN操作。
 
 
+## Reference
+
+- [rman-overview](http://www.oracle.com/technetwork/database/features/availability/rman-overview-096633.html)

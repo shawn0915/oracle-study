@@ -1,6 +1,6 @@
 # Transaction 事务
 
-[SQL-DEMO](../../sql_scripts/dev/dml/transaction.sql)
+[SQL-DEMO](../../scripts/dev/dml/transaction.sql)
 
 ## 数据库事务
 

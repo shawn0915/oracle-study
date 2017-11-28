@@ -16,6 +16,6 @@
 - 基于NVRAM的多级缓存增强
 - 安全增强
 
-> Reference
->
-> [Oracle Database 18c 的10大新特性一览](https://mp.weixin.qq.com/s/qmSNFd6Oh7Cc4BvRixmdHw)
+## Reference
+
+- [Oracle Database 18c 的10大新特性一览](https://mp.weixin.qq.com/s/qmSNFd6Oh7Cc4BvRixmdHw)

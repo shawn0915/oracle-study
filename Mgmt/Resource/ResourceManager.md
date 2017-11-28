@@ -2,7 +2,7 @@
 
 资源管理器
 
-[SQL-DEMO-RESOURCE](../../sql_scripts/mgmt/resource/resource.sql)
+[SQL-DEMO-RESOURCE](../../scripts/mgmt/resource/resource.sql)
 
 ## 资源管理器体系结构
 

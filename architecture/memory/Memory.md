@@ -32,7 +32,7 @@
 ## SGA
 实例共享内存
 
-[SQL-DEMO-SGA](../../sql_scripts/mgmt/memory/mem_sga.sql)
+[SQL-DEMO-SGA](../../scripts/mgmt/memory/mem_sga.sql)
 
 
 
@@ -62,7 +62,7 @@ Java代码在共享池中缓存
 ## PGA
 会话的专用区域
 
-[SQL-DEMO-PGA](../../sql_scripts/mgmt/memory/mem_pga.sql)
+[SQL-DEMO-PGA](../../scripts/mgmt/memory/mem_pga.sql)
 
 
 > 会话特有的数据

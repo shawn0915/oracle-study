@@ -1,11 +1,13 @@
-# Oracle Storage 存储结构
+# Oracle Storage Structures
+存储结构
 
-- [物理结构](#物理结构)
-- [逻辑结构](#逻辑结构)
+- [Physical Structures](#physical)
+- [Logical Structures](#logical)
 - [ASM](ASM/ASM.md)
 - [Others](#others)
 
-## 物理结构
+## Physical
+物理结构
 
 - Schema, 模式
 - [Database Files, 数据库文件](#数据库文件)
@@ -23,7 +25,7 @@
 
 ### 数据库文件
 
-[SQL-Demo](../../sql_scripts/mgmt/arch/arch_db_file.sql)
+[SQL-Demo](../../scripts/mgmt/arch/arch_db_file.sql)
 
 #### Control Files, 控制文件 controlnn.ctl
 
@@ -58,7 +60,8 @@
 
 
 
-## 逻辑结构
+## Logical
+逻辑结构
 
 - [Tablespace, 表空间](#tablespace)
 - [Segment, 段](#segement)
@@ -73,7 +76,7 @@
 - 表空间可由多个数据文件组成。
 - 元数据作为一组段存储在SYSTEM和SYSAUX表空间。
 
-[SQL-Demo](../../sql_scripts/mgmt/arch/arch_tablespace.sql)
+[SQL-Demo](../../scripts/mgmt/arch/arch_tablespace.sql)
 
 OMF, Oracle-Managed Files
 
@@ -92,7 +95,7 @@ OMF, Oracle-Managed Files
 - 一个段可以包含位于多个数据文件的区间。
 - 一个段包含多个区间，一个区间包含多个Oracle块，一个Oracle块包含多个操作系统块。
 
-[SQL-Demo](../../sql_scripts/mgmt/arch/arch_segment.sql)
+[SQL-Demo](../../scripts/mgmt/arch/arch_segment.sql)
 
 
 ### Extent

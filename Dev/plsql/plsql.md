@@ -1,6 +1,6 @@
 # PL/SQL
 
-[demo-sql](../../sql_scripts/dev/plsql/plsql.sql)
+[demo-sql](../../scripts/dev/plsql/plsql.sql)
 
 无论PL/SQL存储在何处，都始终在数据库中执行。Java可以运行在数据库中，也可以运行在客户机上。
 
@@ -51,7 +51,7 @@ execute immediate '动态sql语句'
 - 预定义异常
 - 用户定义异常
 
-=> [sql-demo](../../sql_scripts/dev/plsql/exception.sql)
+=> [sql-demo](../../scripts/dev/plsql/exception.sql)
 
 
 ## Subprogram
@@ -66,8 +66,8 @@ execute immediate '动态sql语句'
 
 > 分类
 
-- PROCEDURE 过程 [sql-demo](../../sql_scripts/dev/plsql/subprogram.sql)
-- FUNCTION 函数 [sql-demo](../../sql_scripts/dev/plsql/subprogram.sql)
+- PROCEDURE 过程 [sql-demo](../../scripts/dev/plsql/subprogram.sql)
+- FUNCTION 函数 [sql-demo](../../scripts/dev/plsql/subprogram.sql)
 
 
 > 区别
@@ -130,3 +130,7 @@ AS
 END ;
 
 ```
+
+## Reference
+
+- [plsql/overview](http://www.oracle.com/technetwork/database/application-development/plsql/overview/index.html)

@@ -5,7 +5,7 @@
 - [日期数据类型](#date)
 - [其他数据类型](#others)
 
-[SQL-DEMO-DataType](../../sql_scripts/dev/ddl/datatype.sql)
+[SQL-DEMO-DataType](../../scripts/dev/ddl/datatype.sql)
 
 ## Character
 

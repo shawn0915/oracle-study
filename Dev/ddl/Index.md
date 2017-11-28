@@ -1,6 +1,6 @@
 # Index
 
-[SQL-DEMO-Index](../../sql_scripts/dev/ddl/index.sql)
+[SQL-DEMO-Index](../../scripts/dev/ddl/index.sql)
 
 ## 功能
 

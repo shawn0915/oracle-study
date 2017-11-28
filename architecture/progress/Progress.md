@@ -1,17 +1,21 @@
-# 进程结构
+# Process
+进程结构
 
-- 用户进程
-- 服务器进程
-- [后台进程](#后台进程)
+- User Processes, 用户进程
+- Oracle Processes, 服务器进程
+- [Background Processes, 后台进程](#background)
 
-[SQL-Demo-Progresses](../../sql_scripts/mgmt/memory/mem_progress.sql)
+[SQL-Demo-Progresses](../../scripts/mgmt/memory/mem_progress.sql)
+
+[orafaq/wiki/Processes](http://www.orafaq.com/wiki/Database_Concepts_and_Architecture)
 
 查看系统进程数量。在Linux上，Oracle进程是独立的操作系统进程
 ```bash
 ps -ef | grep oracle | wc -l
 ```
 
-## 后台进程
+## Background
+后台进程
 
 > General Processes(Important)
 
@@ -59,7 +63,7 @@ DBWn, Database Writer, 数据库写入进程
 - 将修改后的缓冲区数据写入数据文件中（脏缓存达到阀值，系统中没有多余的空缓冲区来存放数据 ，CKPT 进程触发DBWR ，超时 ）
 - 一个实例可有多个DBWR。在这样的实例中，一些块可写入一磁盘，另一些块可写入其它磁盘
 
-[sql-demo-查看数据写入进程使用情况](../../sql_scripts/mgmt/memory/mem_progress.sql)
+[sql-demo-查看数据写入进程使用情况](../../scripts/mgmt/memory/mem_progress.sql)
 
 ### LGWR
 

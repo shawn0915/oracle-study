@@ -3,7 +3,7 @@
 - [Backup](#backup)
 - [Recovery](#recovery)
 - [备份和恢复配置](backup.md)
-- [RMAN](RMAN/RMAN.md)
+- [RMAN](rman/RMAN.md)
 - [用户管理的备份、还原和恢复](user_mgmt_backup.md)
 - [Flashback闪回](Flashback/Flashback.md)
 - [数据迁移](DataTrans/Readme.md)
