@@ -10,7 +10,7 @@
 物理结构
 
 - Schema, 模式
-- [Database Files, 数据库文件](#数据库文件)
+- [Database Files](#database-files)
   - Control Files, 控制文件
   - Database Data Files, 数据文件
   - Online Redo Logs, 联机Redo日志文件
@@ -21,9 +21,8 @@
 - Flashback日志
 - 恢复备份(RMAN)文件
 
-
-
-### 数据库文件
+### Database Files
+数据库文件
 
 [SQL-Demo](../../scripts/mgmt/arch/arch_db_file.sql)
 
@@ -45,19 +44,11 @@
 
 #### OtherFiles
 
-> Instance Parameter File, 实例参数文件
-
-[pfile/spfile](../../Mgmt/Instance/Instance.md)
-
-> Password File, 口令文件
-
-
-> Archive Redo Log Files, 归档重做日志文件
-
-
-> Alert Log and Trace Files, 警报日志和跟踪文件
-
-
+- Instance Parameter File, 实例参数文件
+  - [pfile/spfile](../../Mgmt/Instance/Instance.md)
+- Password File, 口令文件
+- Archive Redo Log Files, 归档重做日志文件
+- Alert Log and Trace Files, 警报日志和跟踪文件
 
 
 ## Logical
