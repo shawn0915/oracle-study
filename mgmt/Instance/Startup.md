@@ -25,4 +25,4 @@ SHUTDOWN => NOMOUNT **参数文件** => MOUNT **控制文件** => OPEN **日志�
 
 ## 归档模式
 
-[sql-demo-数据库名称](../../scripts/mgmt/arch/arch_db_name.sql)
+[sql-demo-数据库名称](../../scripts/arch/arch_db_name.sql)

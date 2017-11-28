@@ -1,5 +1,6 @@
 # Oracle Automatic Storage Management (ASM)
 自动存储管理
+Oracle ASM a high-performance, ease-of-management storage solution for Oracle Database files.
 
 ## Evolution
 
@@ -7,7 +8,8 @@
 - 手工段管理MSSM => 自动段管理ASSM
 - RAW/FILE SYSTEM => ASM
 
-## 逻辑卷管理器
+## LVM
+逻辑卷管理器
 
 Oracle感知的LVM。
 
@@ -26,7 +28,7 @@ ASM只能存储数据库文件(控制文件、数据文件、联机重做日志�
 
 ASM镜像默认是单镜像，但是可以设置为无镜像或双镜像；不能禁用条带化。
 
-![ASM的组成部分](../img/asm_make.png)
+![ASM的组成部分](../../img/asm_make.png)
 
 常规的磁盘活动不涉及ASM实例。ASM是一种使文件可用的管理和控制功能，它不执行实际的I/O工作。
 
@@ -36,6 +38,10 @@ RMAN是可以用来备份ASM文件的唯一工具。由于操作系统应用程�
 
 RBAL进程。
 
+## Reference
+
+- [Automatic Storage Management Administrator's Guide](https://docs.oracle.com/cd/E11882_01/server.112/e18951/toc.htm)
+- [Administering Oracle Automatic Storage Management](https://docs.oracle.com/cd/E11882_01/server.112/e10897/asm.htm#ADMQS12100)
 
 =====================================================================================
 
@@ -49,5 +55,3 @@ RBAL进程。
 - 命令行创建磁盘组
 - 修改磁盘组
 - 利用 RMAN 将数据库文件系统迁移到 ASM
-
-

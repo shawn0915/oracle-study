@@ -1,6 +1,6 @@
 # Oracle Management
 
-- [Install](Install/Install.md)
+- [Install](install/Install.md)
 - [Instance实例管理](Instance/Instance.md)
 - [Upgrade](Upgrade.md)
 - [Network](Network/Network.md)

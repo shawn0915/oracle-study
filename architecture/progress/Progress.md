@@ -110,7 +110,7 @@ Oracle数据库有两种运行方式：归档（**ARCHIVELOG**）和非归档（
 
 LGWR对联机日志文件中执行写操作，ARCn读取联机日志文件，其他任何进程根本不接触此类文件。
 
-![后台进程和内存的关系](../../Mgmt/img/progress_memory.png)
+![后台进程和内存的关系](../../mgmt/img/progress_memory.png)
 
 ### MMON
 

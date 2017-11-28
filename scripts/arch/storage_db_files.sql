@@ -1,5 +1,6 @@
 /*
-Control Files 控制文件
+Control Files
+控制文件
  */
 sys@XE> select name from v$controlfile;
 
@@ -39,7 +40,7 @@ sys@XE> select file_name,bytes from dba_data_files;
 
 
 /*
-Online Redo Logs
+Online Redo Log
  */
 
 sys@XE> select group#,member from v$logfile;

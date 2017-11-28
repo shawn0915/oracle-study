@@ -1,6 +1,6 @@
 # Oracle Install
 
-> Noun
+## Concepts
 
 - [OUI, Oracle Universal Installer](#oui)
 - DBCA, Database Configuration Assistant
@@ -31,6 +31,12 @@ export PATH=$ORACLE_HOME/bin:$PATH
 # OUI
 export DISPLAY=:0.0
 ```
+
+## Oracle XE
+
+- Install Oracle 11g R2 on RHEL 7.2
+  - [Step1: install_orcl_11gR2_xe_s1.sh](../scripts/mgmt/install/install_orcl_11gR2_xe_s1.sh)
+  - [Step2: install_orcl_11gR2_xe_s2.sh](../scripts/mgmt/install/install_orcl_11gR2_xe_s2.sh)
 
 ## Windows
 

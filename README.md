@@ -1,12 +1,15 @@
 # oracle-study
 
+[![Oracle11gR2](svg/Oracle-11gR2-brightgreen.svg)](README.md)
+
+
 ## Contents
 
 - [ ] [Architecture](architecture/Architecture.md)
-  - [ ] [Storage](architecture/storage/Storage.md)
+  - [x] [Storage Structures](architecture/storage/Storage.md)
 - [x] [Concepts](concepts/Contepts.md)
 - [ ] [Development](Dev/Readme.md)
-- [ ] [Management](Mgmt/Readme.md)
+- [ ] [Management](mgmt/Readme.md)
 - [ ] [Backup](Backup/Readme.md)
 - [ ] [Monitor](monitor/Monitor.md)
 - [ ] [Optimize](Optimize/Readme.md)
