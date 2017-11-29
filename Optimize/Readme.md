@@ -51,7 +51,7 @@ DBA_ALTER_HISTORY
 
 ## SQL优化
 
-- [表连接](../Dev/join/join.md)
+- [表连接](../dev/join/join.md)
 - 思路
   - 简化
   - 统计信息

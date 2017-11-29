@@ -24,3 +24,29 @@ HR实体-关系图
 
 ![HR_E-R](../img/HR_E-R.png)
 
+# where
+
+条件子句使用比较运算符比较两个选项。重要的是理解这两项的数据类型，如果有必要，可以将它们包含在单引号内。
+
+```oracle
+where
+=
+!=
+between
+in
+like
+```
+
+### order
+
+[SQL-DEMO-Order](../scripts/dev/sql_select/order.sql)
+
+
+### and符号替换
+
+[SQL-DEMO-and-replace](../scripts/dev/sql_select/and-replace.sql)
+
+```oracle
+&
+&&
+```

@@ -5,7 +5,7 @@
 - [日期数据类型](#date)
 - [其他数据类型](#others)
 
-[SQL-DEMO-DataType](../../scripts/dev/ddl/datatype.sql)
+[SQL-DEMO-DataType](../../scripts/dev/todo/datatype.sql)
 
 ## Character
 
@@ -95,7 +95,7 @@ CHARACTER ==TO_DATE==> DATE ==TO_CHAR==> CHARACTER
 CHARACTER ==TO_NUMBER==> NUMBER ==TO_CHAR==> CHARACTER
 ```
 
-![显示转换](img/dataType_trans.png)
+![显示转换](../img/dataType_trans.png)
 
 - 隐式转换
 ```oracle

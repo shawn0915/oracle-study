@@ -7,7 +7,7 @@
 
 - [x] [Architecture](architecture/Architecture.md)
 - [x] [Concepts](concepts/Contepts.md)
-- [ ] [Development](Dev/Readme.md)
+- [ ] [Development](dev/Development.md)
 - [ ] [Management](mgmt/Readme.md)
 - [ ] [Backup](Backup/Readme.md)
 - [ ] [Monitor](monitor/Monitor.md)

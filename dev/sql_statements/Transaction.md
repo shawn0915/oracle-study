@@ -1,15 +1,22 @@
-# Transaction 事务
+# Transaction Control Statements
+事务控制
 
-[SQL-DEMO](../../scripts/dev/dml/transaction.sql)
+- COMMIT
+- ROLLBACK
+- ROLLBACK TO SAVEPOINT
+- SAVEPOINT
+- SET TRANSACTION
+- SET CONSTRAINT
+
+[SQL-DEMO-Transaction](../../scripts/dev/sql_statements/sql_transaction.sql)
 
 ## 数据库事务
 
-**ACID**
-
-- Atomicity 原子性
-- Consistency 一致性
-- Isolation 隔离性
-- Durability 持久性
+- ACID
+  - Atomicity 原子性
+  - Consistency 一致性
+  - Isolation 隔离性
+  - Durability 持久性
 
 ### 执行SELECT
 
@@ -37,10 +44,6 @@
 
 
 ## 事务控制
-
-```oracle
-COMMIT / ROLLBACK / SAVEPOINT / SELECT FOR UPDATE 
-```
 
 执行`COMMIT`命令时，DBWn进程不会进行任何操作。
 

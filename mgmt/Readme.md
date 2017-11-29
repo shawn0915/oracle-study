@@ -13,14 +13,14 @@
 > 管理方案对象
 
 - schema 模式
-- [data type 数据类型](../Dev/ddl/DataType.md)
-- [constraints 约束条件状态](../Dev/ddl/Constraints.md)
-- [table 表](../Dev/ddl/Table.md)
+- [data type 数据类型](../dev/todo/DataType.md)
+- [constraints 约束条件状态](../dev/todo/Constraints.md)
+- [table 表](../dev/todo/Table.md)
 
 > 管理数据和并发处理
 
-- [trigger 触发器](../Dev/plsql/Trigger.md)
-- [lock 锁](../Dev/dml/Lock.md)
+- [trigger 触发器](../dev/plsql/Trigger.md)
+- [lock 锁](../dev/todo/Lock.md)
 - Nowait
 
 > 管理还原数据

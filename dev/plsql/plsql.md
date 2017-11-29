@@ -1,7 +1,8 @@
-# PL/SQL
+# Procedural Language/SQL (PL/SQL)
 
-[demo-sql](../../scripts/dev/plsql/plsql.sql)
+[SQL-DEMO-plsql](../../scripts/dev/plsql/plsql.sql)
 
+PL/SQL是Oracle专有的、在数据库内运行的第三代语言。
 无论PL/SQL存储在何处，都始终在数据库中执行。Java可以运行在数据库中，也可以运行在客户机上。
 
 ## 对象
