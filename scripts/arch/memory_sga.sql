@@ -18,3 +18,16 @@ DEFAULT 16K buffer cache	0	0	0
 DEFAULT 32K buffer cache	0	0	0
 Shared IO Pool	0	0	0
 ASM Buffer Cache	0	0	0
+
+
+/*
+查看 sga 大小信息
+ */
+system@XE> show parameter sga;
+
+NAME				     TYPE	 VALUE
+------------------------------------ ----------- ------------------------------
+lock_sga			     boolean	 FALSE
+pre_page_sga			     boolean	 FALSE
+sga_max_size			     big integer 1G
+sga_target			     big integer 0

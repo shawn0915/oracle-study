@@ -1,6 +1,6 @@
 # OCP
 
-> 考试范围: 单实例体系结构
+> Single-Instance Database
 
 ## 10g
 

@@ -1,23 +1,28 @@
 # Oracle Database Architecture
 
-- [Storage Structures](storage/Storage.md)
-  - Physical Storage Structures
-  - Logical Storage Structures
-- [内存结构](memory/Memory.md)
-  - SGA
-  - PGA
-- [Progress](progress/Progress.md)
-  - 用户进程
-  - 服务器进程
-  - Background Process, 后台进程
+- [x] [Storage Structures](storage/Storage.md)
+  - [x] [Physical Storage Structures](storage/Storage.md#physical)
+  - [x] [Logical Storage Structures](storage/Storage.md#logical)
+- [x] Instance Architecture
+  - [x] [Oracle Database Instance](instance/Instance.md)
+  - [x] [Memory Architecture](memory/Memory.md)
+    - [x] [SGA](memory/Memory_SGA.md)
+    - [x] [PGA](memory/Memory_PGA.md)
+    - [x] [UGA](memory/Memory_UGA.md)
+  - [x] Process Architecture
+    - Oracle Processes
+      - [x] [Background Processes](process/Process_Background.md)
+      - [x] [Server Processes](https://docs.oracle.com/cd/E11882_01/server.112/e40540/process.htm#CNCPT1248)
+      - [x] Slave Processes
+    - Client Processes
+  - [x] [Application and Networking Architecture](https://docs.oracle.com/cd/E11882_01/server.112/e40540/dist_pro.htm#CNCPT006)
 
 
-> Oracle服务器=Oralce数据库+Oracle实例
-数据库Storage=物理结构+逻辑结构
-实例Instance=后台进程+内存结构
+> Oracle服务器 = Oracle数据库 + Oracle实例
+数据库Storage = physical物理结构 + logical逻辑结构
+实例Instance = background后台进程 + memory内存结构
 
-
-要创建数据库，实例必须处于NOMOUNT模式
+![Process_and_SGA](img/Oracle_Processes_and_the_SGA.gif)
 
 ## Oracle 工作区域
 

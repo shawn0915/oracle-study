@@ -5,8 +5,7 @@
 
 ## Contents
 
-- [ ] [Architecture](architecture/Architecture.md)
-  - [x] [Storage Structures](architecture/storage/Storage.md)
+- [x] [Architecture](architecture/Architecture.md)
 - [x] [Concepts](concepts/Contepts.md)
 - [ ] [Development](Dev/Readme.md)
 - [ ] [Management](mgmt/Readme.md)

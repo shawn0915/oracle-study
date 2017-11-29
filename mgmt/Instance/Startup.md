@@ -17,7 +17,7 @@
 ```
 - 启动数据库
 
-[command-demo](../../scripts/mgmt/instance/inst_startup.sql)
+[command-demo](../../scripts/arch/instance_startup.sql)
 
 
 SHUTDOWN => NOMOUNT **参数文件** => MOUNT **控制文件** => OPEN **日志文件和数据文件**
