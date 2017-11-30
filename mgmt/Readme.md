@@ -13,9 +13,9 @@
 > 管理方案对象
 
 - schema 模式
-- [data type 数据类型](../dev/todo/DataType.md)
+- [data type 数据类型](../dev/data_structures/Data_Types.md)
 - [constraints 约束条件状态](../dev/todo/Constraints.md)
-- [table 表](../dev/todo/Table.md)
+- [table 表](../dev/data_structures/Tables.md)
 
 > 管理数据和并发处理
 

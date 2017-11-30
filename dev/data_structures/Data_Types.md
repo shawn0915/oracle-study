@@ -1,13 +1,16 @@
-# Data Type
+# Data Types
 
-- [字符数据类型](#character)
-- [数字数据类型](#number)
-- [日期数据类型](#date)
+- [Character](#character)
+- [Numeric](#numeric)
+- [Datetime](#datetime)
+- Rowid
+- Format Models
 - [其他数据类型](#others)
 
 [SQL-DEMO-DataType](../../scripts/dev/todo/datatype.sql)
 
 ## Character
+字符数据类型
 
 - `CHAR`
   - 1B->2KB
@@ -22,7 +25,8 @@
     - 全球化
 
 
-## Number
+## Numeric
+数字数据类型
 
 - **`NUMBER`**
   - default: `NUMBER(38, 0)`
@@ -38,7 +42,8 @@
   - after 11g
 
 
-## DATE
+## Datetime
+日期数据类型
 
 - **`DATE`**
   - 长度为0或7个字节
@@ -54,7 +59,7 @@
 - `INTERVAL YEAR TO MONTH`
 - `INTERVAL DAY TO SECOND`
 
-=> [日期类型**函数**](../function/Function.md)
+=> [日期类型**函数**](../todo/function/Function.md)
 
 
 ## Others
