@@ -1,26 +1,26 @@
 # Oracle Management
 
-- [Install](install/Install.md)
-- [Instance实例管理](Instance/Instance.md)
-- [Upgrade](Upgrade.md)
-- [Network](Network/Network.md)
-- [Security安全性](Security/Security.md)
-- [Memory内存管理](../architecture/memory/Memory.md)
-- [Progress后台进程](../architecture/process/Process_Background.md)
-- [ResourceManager资源管理](Resource/ResourceManager.md)
-- [Job调度程序](Job/Job.md)
+- [ ] [Install](install/Install.md)
+- [ ] [Instance实例管理](Instance/Instance.md)
+- [ ] [Upgrade](Upgrade.md)
+- [ ] [Network](Network/Network.md)
+- [ ] [Security](Security/Security.md)
+- [ ] [Memory内存管理](../architecture/memory/Memory.md)
+- [ ] [Progress后台进程](../architecture/process/Process_Background.md)
+- [ ] [ResourceManager资源管理](Resource/ResourceManager.md)
+- [ ] [Job调度程序](Job/Job.md)
 
 > 管理方案对象
 
 - schema 模式
 - [data type 数据类型](../dev/data_structures/Data_Types.md)
-- [constraints 约束条件状态](../dev/todo/Constraints.md)
+- [constraints 约束条件状态](../dev/transaction/Constraints.md)
 - [table 表](../dev/data_structures/Tables.md)
 
 > 管理数据和并发处理
 
 - [trigger 触发器](../dev/plsql/Trigger.md)
-- [lock 锁](../dev/todo/Lock.md)
+- [lock 锁](../dev/sql_statements/dml_lock.md)
 - Nowait
 
 > 管理还原数据

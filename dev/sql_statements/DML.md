@@ -7,7 +7,7 @@
 - DELETE
 - [MERGE](../../scripts/dev/sql_statements/sql_dml_merge.sql)
 - EXPLAIN PLAN
-- LOCK TABLE
+- [LOCK TABLE](dml_lock.md)
 - [Subqueries](dml_subqueries.md)
 
 

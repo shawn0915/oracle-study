@@ -1,4 +1,4 @@
-# Transaction Control Statements
+# Transaction
 事务控制
 
 - COMMIT
@@ -8,7 +8,7 @@
 - SET TRANSACTION
 - SET CONSTRAINT
 
-[SQL-DEMO-Transaction](../../scripts/dev/sql_statements/sql_transaction.sql)
+[SQL-DEMO-Transaction](../../scripts/dev/transcation/sql_transaction.sql)
 
 ## 数据库事务
 

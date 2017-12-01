@@ -1,6 +1,7 @@
-# Lock 锁
+# Lock
+锁
 
-[SQL-DEMO-LOCK](../../scripts/dev/todo/lock.sql)
+[SQL-DEMO-LOCK](../../scripts/dev/sql_statements/sql_dml_lock.sql)
 
 ## 作用
 

@@ -51,7 +51,7 @@ DBA_ALTER_HISTORY
 
 ## SQL优化
 
-- [表连接](../dev/todo/join.md)
+- [表连接](../dev/sql_query/Joins.md)
 - 思路
   - 简化
   - 统计信息

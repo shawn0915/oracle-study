@@ -7,7 +7,7 @@
 
 - [x] [Architecture](architecture/Architecture.md)
 - [x] [Concepts](concepts/Contepts.md)
-- [ ] [Development](dev/Development.md)
+- [x] [Development](dev/Development.md)
 - [ ] [Management](mgmt/Readme.md)
 - [ ] [Backup](Backup/Readme.md)
 - [ ] [Monitor](monitor/Monitor.md)
@@ -18,15 +18,16 @@
 - [x] [Reference](Reference.md)
 - [x] [Download](Download.md)
 
-## Release Version
+## Release Versions
 
+- Oracle 7 (1992)
 - Oracle 8 (1997.6)
-- Oracle 8i (1998.9)
+- Oracle 8i (1999)
 - Oracle 9i (2001.6)
-- Oracle 10g
-  - Oracle 10g R1 (2003.9 - 2006)
-  - Oracle 10g R2 (2010)
-- [Oracle 11g](releaseVersion/OracleDatabase11g.md)
+- Oracle 10g (2003)
+  - Oracle 10g R1
+  - Oracle 10g R2
+- [Oracle 11g (2007)](releaseVersion/OracleDatabase11g.md)
   - Oracle 11g R1 (2008)
   - Oracle 11g R2 (11.2.0.4) (2013)
     - [Oracle XE 11g R2](releaseVersion/OracleDB_XE_11gR2.md)
@@ -49,15 +50,22 @@
 ## Certification
 
 - Oracle Certified Associate (OCA)
-- [Oracle Certified Professional (OCP)](ocp/OCP.md)
-- Oracle Certified Master (OCM)
+- [ ] [Oracle Certified Professional (OCP)](ocp/OCP.md)
+- [ ] Oracle Certified Master (OCM)
+
+## Blog
+
+- [盖国强Eygle](http://www.eygle.com/)
+- [侯圣文Secooler](http://blog.itpub.net/519536/)
+- [张乐奕Kamus](http://www.dbform.com/)
+- [崔旭dbstyle](http://www.dbstyle.net/)
 
 ## Books
 
 - Oracle Database 11g & MySQL 5.6开发手册
-- OCP/OCA认证考试指南全册: Oracle Database 11g》(All-in-One), 2011
+- OCP/OCA认证考试指南全册: Oracle Database 11g (All-in-One), 2011
 - Oracle DBA 工作笔记 / 杨建荣
-- [oracle-essentials-5th(Oracle精髓)](https://www.safaribooksonline.com/library/view/oracle-essentials-5th/9781449343156/)
+- [oracle-essentials-5th (Oracle精髓)](https://www.safaribooksonline.com/library/view/oracle-essentials-5th/9781449343156/)
 - Oracle性能优化与诊断案例精选 / 盖国强 李轶楠
 - Oracle数据库技术实用详解：教你如何成为10g+OCP
 - 深入数据库体系结构 / Thomas Kyte

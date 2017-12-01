@@ -1,6 +1,6 @@
-# 单行函数
+# Functions
 
-[SQL-DEMO-FUNCTION](../../../scripts/dev/function/function.sql)
+[SQL-DEMO-FUNCTION](../../scripts/dev/function/function.sql)
 
 
 ## 类型
@@ -45,7 +45,7 @@ mod -- modulus
 
 ### 日期函数
 
-[SQL-DEMO-DATE-TIME](../../../scripts/dev/function/func_date_time.sql)
+[SQL-DEMO-DATE-TIME](../../scripts/dev/function/func_date_time.sql)
 
 ```oracle
 ADD_MONTHS
@@ -89,7 +89,7 @@ TO_NUMBER
 如果使用较长的格式掩码转换数字，就会返回原数字。不要混淆`TO_NUMBER`转换和`TO_CHAR`转换。
 例如，`TO_NUMBER(123.56，'999.9')`返回错误，而`TO_CHAR(123.56,'999.9')`返回123.6。
 
-=> [数据类型转换](../../data_structures/Data_Types.md)
+=> [数据类型转换](../data_structures/Data_Types.md)
 
 
 

@@ -1,6 +1,16 @@
-# 表连接
+# Joins
 
-[SQL-DEMO-JOIN](../../scripts/dev/join/join.sql)
+[SQL-DEMO-JOIN](../../scripts/dev/sql_query/join.sql)
+
+- Join Conditions
+- Equijoins
+- Self Joins
+- Cartesian Products
+- Inner Joins
+- Outer Joins
+- Antijoins
+- Semijoins
+
 
 > Oracle 6
 
@@ -36,3 +46,6 @@ OUTER JOIN 外连接
 CROSS JOIN 交叉连接(笛卡尔)
 ```
 
+## Reference
+
+- [Joins](https://docs.oracle.com/cd/E11882_01/server.112/e41084/queries006.htm#SQLRF30046)

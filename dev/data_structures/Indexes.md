@@ -1,22 +1,25 @@
-# Index
+# Indexes
 
-[SQL-DEMO-Index](../../scripts/dev/todo/index.sql)
+[SQL-DEMO-Index](../../scripts/dev/data_structures/indexes.sql)
 
 ## 功能
 
 - 强制实施主键约束和唯一约束
 - 提高性能
 
-## 索引类型
+## Types
 
-- B*Tree
+- B-tree indexes
   - B => balance
-  - B*Tree索引不包括NULL
-- 位图索引
+  - B-Tree索引不包括NULL
+- Bitmap and bitmap join indexes
   - rowid
   - 位图索引包括NULL
+- Function-based indexes
+- Application domain indexes
 
-## 索引类型选项
+## Index Characteristics
+索引类型选项
 
 - 唯一或非唯一 unique or non-unique index
 - 反向键索引 reverse key
@@ -36,3 +39,8 @@
 ## Others
 
 索引有自己的名称空间。
+
+
+## Reference
+
+- [Types of Indexes](https://docs.oracle.com/cd/E11882_01/server.112/e40540/indexiot.htm#CNCPT1170)

@@ -17,6 +17,7 @@
 - [Logical Storage Structure](LogicalStorageStructure.md)
   - Tablespace
   - Segment
+    - [undo segment](segment/segment_undo.md)
   - Extent
   - Data Blocks
 - [Others](#others)

@@ -1,9 +1,9 @@
-# Sequence
+# Sequences
 序列
 
 序列是生成唯一整数值的结构。
 
-[SQL-DEMO](../../scripts/dev/todo/sequence.sql)
+[SQL-DEMO-Sequences](../../scripts/dev/data_structures/sequence.sql)
 
 序列的CURRVAL是发送给当前会话的上一个值，不一定是发出的上一个值。直到选择了NEXTVAL后才能选择CURRVAL。
 

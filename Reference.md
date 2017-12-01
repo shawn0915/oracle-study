@@ -9,21 +9,21 @@
 - [Oracle Database Documentation](https://docs.oracle.com/en/database/)
 - [oracle/timeline](http://oracle.com.edgesuite.net/timeline/oracle/)
 - [oracle/faqs/wiki](http://www.orafaq.com/wiki/1977)
-- [docs/oracle112](https://docs.oracle.com/cd/E11882_01/index.htm)
-- [docs/oracle122](https://docs.oracle.com/database/122/index.htm)
 - [sql_keywords](https://docs.oracle.com/cd/E11882_01/nav/sql_keywords-a.htm)
+
+## docs-112
+
+- [docs/oracle112](https://docs.oracle.com/cd/E11882_01/index.htm)
+- [Database SQL Language Reference](https://docs.oracle.com/cd/E11882_01/server.112/e41084/toc.htm)
+
+## docs-122
+
+- [docs/oracle122](https://docs.oracle.com/database/122/index.htm)
 
 ## Third-Party
 
 - [Oracle connection strings](https://www.connectionstrings.com/oracle/)
 - [wikipedia/Oracle_Database](https://en.wikipedia.org/wiki/Oracle_Database)
-
-## Blog
-
-- [盖国强Eygle](http://www.eygle.com/)
-- [侯圣文Secooler](http://ocmu.org/)
-- [张乐奕Kamus](http://www.dbform.com/)
-- [崔旭dbstyle](http://www.dbstyle.net/)
 
 ## Share
 

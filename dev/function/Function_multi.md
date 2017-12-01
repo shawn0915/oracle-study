@@ -3,7 +3,7 @@
 - [聚合函数](#聚合函数)
 - [分组函数](#分组函数)
 
-[SQL-DEMO](../../../scripts/dev/function/func_group.sql)
+[SQL-DEMO](../../scripts/dev/function/func_group.sql)
 
 ## 聚合函数
 

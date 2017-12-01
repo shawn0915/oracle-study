@@ -13,3 +13,7 @@
 临时表写入用户的临时表空间
 
 [table_temp.sql](../../scripts/dev/data_structures/table_temporary.sql)
+
+## Reference
+
+- [Overview of Tables](https://docs.oracle.com/cd/E11882_01/server.112/e40540/tablecls.htm#CNCPT211)

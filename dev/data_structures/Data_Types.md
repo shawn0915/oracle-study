@@ -4,10 +4,13 @@
 - [Numeric](#numeric)
 - [Datetime](#datetime)
 - Rowid
-- Format Models
-- [其他数据类型](#others)
+- [Format Models](#format-models)
+- Nulls
+- Comments
+  - Hints
+- [Others](#others)
 
-[SQL-DEMO-DataType](../../scripts/dev/todo/datatype.sql)
+[SQL-DEMO-DataType](../../scripts/dev/data_structures/datatype.sql)
 
 ## Character
 字符数据类型
@@ -59,10 +62,11 @@
 - `INTERVAL YEAR TO MONTH`
 - `INTERVAL DAY TO SECOND`
 
-=> [日期类型**函数**](../todo/function/Function.md)
+=> [日期类型**函数**](../function/Functions.md)
 
 
 ## Others
+其他数据类型
 
 - LOB
   - `CLOB`/`NCLOB`
@@ -91,7 +95,8 @@
 - 用户自定数据
 - AnyType/AnyData/AnyDataSet
 
-> 数据类型转换
+## Format Models
+数据类型转换
 
 - 显式转换
 ```oracle

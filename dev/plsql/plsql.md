@@ -135,3 +135,4 @@ END ;
 ## Reference
 
 - [plsql/overview](http://www.oracle.com/technetwork/database/application-development/plsql/overview/index.html)
+- [doc/plsql](https://docs.oracle.com/cd/E11882_01/appdev.112/e25519/toc.htm)

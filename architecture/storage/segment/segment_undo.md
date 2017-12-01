@@ -1,4 +1,5 @@
-# UNDO 撤销
+# undo segment
+撤销
 
 撤销段使用与**回滚段**的使用相矛盾：根据`UNDO_MANAGEMENT`参数的不同设置，Oracle数据库要么使用撤销段，要么使用回滚段。
 
@@ -27,3 +28,4 @@
 `Expired`撤销是读一致性不再需要的数据，在重用撤销段的空间时，将随时重写`Expired`撤销。
 
 
+- [Undo Segments and Transactions](https://docs.oracle.com/cd/E11882_01/server.112/e40540/logical.htm#CNCPT305)
