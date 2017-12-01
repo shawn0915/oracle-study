@@ -1,10 +1,12 @@
-# Oracle Management
+# Management
 
-- [ ] [Install](install/Install.md)
+- [x] [Installing](installing/Installing.md)
+  - [x] [Upgrading](installing/Upgrading.md)
+- [x] [Security](security/Security.md)
+- [ ] [Network](network/Network.md)
+
+
 - [ ] [Instance实例管理](Instance/Instance.md)
-- [ ] [Upgrade](Upgrade.md)
-- [ ] [Network](Network/Network.md)
-- [ ] [Security](Security/Security.md)
 - [ ] [Memory内存管理](../architecture/memory/Memory.md)
 - [ ] [Progress后台进程](../architecture/process/Process_Background.md)
 - [ ] [ResourceManager资源管理](Resource/ResourceManager.md)

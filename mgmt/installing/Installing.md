@@ -1,4 +1,4 @@
-# Oracle Install
+# Oracle Installing
 
 ## Concepts
 
@@ -7,9 +7,19 @@
 - DBUA, Database Upgrade Assistant
 - Oracle Enterprise Manager Database Control
 
+## Platform
+
+- Linux
+  - Install Oracle XE 11g R2 on RHEL 7.2
+    - [Step1: install_orcl_11gR2_xe_s1.sh](../../scripts/mgmt/install/install_orcl_11gR2_xe_s1.sh)
+    - [Step2: install_orcl_11gR2_xe_s2.sh](../../scripts/mgmt/install/install_orcl_11gR2_xe_s2.sh)
+- Microsoft Windows
+  - [Install](win_install.md)
+  - [Uninstall](win_uninstall.md)
+
 ## OUI
 
-> 产品清单inventory
+- 产品清单inventory
 
 文件位置
 ```bash
@@ -32,13 +42,6 @@ export PATH=$ORACLE_HOME/bin:$PATH
 export DISPLAY=:0.0
 ```
 
-## Oracle XE
+## Reference
 
-- Install Oracle 11g R2 on RHEL 7.2
-  - [Step1: install_orcl_11gR2_xe_s1.sh](../scripts/mgmt/install/install_orcl_11gR2_xe_s1.sh)
-  - [Step2: install_orcl_11gR2_xe_s2.sh](../scripts/mgmt/install/install_orcl_11gR2_xe_s2.sh)
-
-## Windows
-
-- [Install](Install_win.md)
-- [Uninstall](Uninstall_win.md)
+- [doc/Installing and Upgrading](https://docs.oracle.com/cd/E11882_01/nav/portal_11.htm)

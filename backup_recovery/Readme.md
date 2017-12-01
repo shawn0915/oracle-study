@@ -1,4 +1,4 @@
-# Oracle Backup
+# Backup and Recovery
 
 - [Backup](#backup)
 - [Recovery](#recovery)

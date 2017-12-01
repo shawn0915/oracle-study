@@ -4,7 +4,8 @@ Oracle Net 的旧称是 Sqlnet。
 
 将SQL语句从用户进程传送至服务器进程，并将结果从服务器进程取回至用户进程。
 
-Oracle Net 还可用于数据库之间的通信：针对一个数据库的用户会话可以执行针对另一个数据库的SQL语句。 
+Oracle Net 还可用于数据库之间的通信：针对一个数据库的用户会话可以执行针对另一个数据库的SQL语句。
+
 [sql-demo](../../scripts/mgmt/net.sql)
 
 ## 配置Oralce网络环境
