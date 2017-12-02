@@ -42,6 +42,13 @@ export PATH=$ORACLE_HOME/bin:$PATH
 export DISPLAY=:0.0
 ```
 
+## Oracle Database Services on MicroSoft Windows 
+
+实例`OracleServiceSID`
+
+监听`TNSListener`
+
 ## Reference
 
 - [doc/Installing and Upgrading](https://docs.oracle.com/cd/E11882_01/nav/portal_11.htm)
+- [Administering a Database on Windows](https://docs.oracle.com/cd/E11882_01/win.112/e10845/admin.htm#NTQRF070)

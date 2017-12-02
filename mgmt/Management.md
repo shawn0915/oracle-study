@@ -3,8 +3,12 @@
 - [x] [Installing](installing/Installing.md)
   - [x] [Upgrading](installing/Upgrading.md)
 - [x] [Security](security/Security.md)
-- [ ] [Network](network/Network.md)
+- [x] [Network](network/Network.md)
 
+
+
+todo
+---
 
 - [ ] [Instance实例管理](Instance/Instance.md)
 - [ ] [Memory内存管理](../architecture/memory/Memory.md)
@@ -12,12 +16,6 @@
 - [ ] [ResourceManager资源管理](Resource/ResourceManager.md)
 - [ ] [Job调度程序](Job/Job.md)
 
-> 管理方案对象
-
-- schema 模式
-- [data type 数据类型](../dev/data_structures/Data_Types.md)
-- [constraints 约束条件状态](../dev/transaction/Constraints.md)
-- [table 表](../dev/data_structures/Tables.md)
 
 > 管理数据和并发处理
 

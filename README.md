@@ -49,7 +49,7 @@
 
 ## Certification
 
-- Oracle Certified Associate (OCA)
+- [ ] Oracle Certified Associate (OCA)
 - [ ] [Oracle Certified Professional (OCP)](ocp/OCP.md)
 - [ ] Oracle Certified Master (OCM)
 
